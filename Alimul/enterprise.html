@@ -14,9 +14,13 @@
             font-family: 'Source Sans Pro', sans-serif;
         }
 
+        .clear {
+            clear: both;
+        }
+
         #head {
             height: 8vh;
-            border-bottom: 1px solid rgba(0,0,0,.1);
+            border-bottom: 1px solid rgba(0, 0, 0, .1);
             color: #1f1f1f;
         }
 
@@ -60,7 +64,70 @@
             text-align: center;
             font-weight: 500;
         }
-        
+
+        #fst_cont {
+            height: 83vh;
+            width: 90%;
+            margin: auto;
+            margin-top: 5vh;
+            /* background-color: aqua; */
+        }
+
+        #fstLeft {
+            height: 80%;
+            width: 45%;
+            margin-top: 4%;
+            float: left;
+            /* background-color: bisque; */
+        }
+
+        h1 {
+            font-size: 42px;
+            line-height: 52px;
+        }
+
+        #fstLeft p {
+            line-height: 28px;
+            font-size: 20px;
+            letter-spacing: -.1px;
+        }
+
+
+        #fstRight {
+            height: 100%;
+            width: 40%;
+            float: right;
+            /* background-color: bisque; */
+        }
+
+        #fstRight img {
+            width: 100%;
+        }
+
+        #fstbtn {
+            border: 2px solid #bfd5f4;
+            border-radius: 2px;
+            padding: 23px 48px;
+            font-size: 18px;
+            letter-spacing: 0;
+            line-height: 24px;
+            font-weight: 700;
+            text-decoration: none;
+            text-align: center;
+            background-color: #0056d2;
+            color: #fff;
+            width: 35%;
+        }
+        #soa {
+            margin-top: 5%;
+        }
+        a {
+            color: #0056d2;
+            text-decoration: none;
+        }
+        .linkColor {
+            color: #0056d2;
+        }
     </style>
 </head>
 
@@ -80,17 +147,25 @@
             <div>|</div>
             <div>Product</div>
             <div>|</div>
-            <div>Home</div>
+            <div class="linkColor">Home</div>
         </div>
+        <div class="clear"></div>
     </div>
-    <div id="1st_cont">
-        <div id="1stLeft">
+    <div id="fst_cont">
+        <div id="fstLeft">
             <h1>Create true business impact with Coursera</h1>
-            <p>Provide world-class training developed by leading universities and companies. All on Coursera for Business.</p>
-            <div id="1stbtn">Contact sales</div>
-            <span>Upskilling a small team? <a href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise" target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+            <p>Provide world-class training developed by leading universities and companies. All on Coursera for
+                Business.</p>
+            <div id="fstbtn">Contact sales</div>
+            <div id="soa">
+                <span>Upskilling a small team? <a
+                    href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise"
+                    target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+            </div>
         </div>
-        <div id="1stRight"></div>
+        <div id="fstRight"><img
+                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/12/Enterprise_C4B_V2-crunch.png"
+                alt=""></div>
     </div>
 </body>
 
