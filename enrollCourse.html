@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Machine Learning</title>
+    <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+        body{
+            font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
+        }
+        .header{
+            background: linear-gradient(90deg,rgb(214, 57, 57),rgb(223, 223, 130));
+            display: flex;
+            flex-direction: row;
+            color: white;
+            
+            margin: 0 -8px;
+        }
+        .go-to-origin{
+            margin: 2% 0;
+        }
+        li>a{
+            color: white;
+        }
+        ul{
+            
+            list-style-type: none;
+            padding: 0;
+        }
+        li{
+            display: inline;
+        }
+        .left, .rigth{
+            width: 40%;
+            padding:5%;
+        }
+        .rigth{
+            padding: 5% 20%;
+        }
+       
+        strong{
+            font-size: 30px;
+        }
+        a{
+            text-decoration: none;
+        }
+        ul>li>span>a{
+            color: white;
+        }
+        /*instructor*/
+        .instructor-profile{
+            display: flex;
+            gap: 1%;
+            margin: 20px 0;
+        }
+        .inst-name{
+            position: relative;
+            top: 15px;
+            
+        }
+        .inst-name>div>a{
+            color: white;
+        }
+        .img-wraper>a>img{
+            border-radius: 50%;
+        }
+        .achivement{
+            border:1px solid white;
+            border-radius: 1px;
+            color: white;
+            background-color: blue;
+            font-weight: 10;
+            font-size: 14px;
+            
+        }
+        /*style on rating*/
+      
+        .checked{
+            color: yellow;
+        }
+        /*enrollment's style*/
+        .enrollment-wrap{
+            margin: 20px 0;
+            width: 50%;
+        }
+        .enroll{
+            width: 80%;
+            background-color: white;
+            color:black !important;
+            padding: 5% 10%;
+            text-align: center;
+            font-size: 15px;
+        }
+        .free-enroll{
+            font-size: 16px;
+            font-style: bold;
+        }
+        .enroll>p{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="left">
+            <div class="go-to-origin">
+                <ul>
+                    <li><span ><a href="#">Browse</a></span> <span>></span> </li>
+                    <li><span><a href="#">Data Science</a></span> <span>></span> </li>
+                    <li><span>Machine Learning</span></li>
+                </ul>
+            </div>
+
+            <div class="title">
+                <h1><span>Machine Learning</span> </h1>
+            </div>
+
+            <div class="star-cont">
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                <span class="fa fa-star checked"></span>
+                
+                <span class="no-of-review"> <b>4.9(162,658)</b> rating</span>
+                 
+            </div>
+
+            <div class="instructor-profile">
+                
+                <div class="img-wraper">
+                    <a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-instructor-photos.s3.amazonaws.com/2a/6192a04f1311e7ba12057425631cbc/AndrewNg-Headshot.jpg?auto=format%2Ccompress&dpr=1&w=36&h=" alt="Andrew Ng"></a> 
+                </div>
+
+                <div class="inst-name">
+                    <div><a href="#">Andrew Ng <b><span class="achivement"><b>TOP INSTRUCTOR</b> </span></b></a></div>
+                </div>
+
+            </div>
+
+            <div class="enrollment-wrap">
+                <a href="#">
+                    <div class="enroll">
+                        <span class="free-enroll">Enroll for Free</span>
+                        <p><span>starts Aug 30</span></p>
+                    </div>
+                </a>
+            </div>
+
+            <div>
+                <p> <span><b>4,338,084</b></span> already Enrolled</p>
+            </div>
+        </div>
+
+        <div class="rigth">
+            <p>Offered By</p>
+            <strong><span>Stanford</span></strong>
+        </div>
+
+    </div>
+
+
+</body>
+</html>
