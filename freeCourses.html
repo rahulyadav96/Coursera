@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Top Free Online Courses | Learn Online with Coursera</title>
     <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
     <style>
         body{
             margin: 0;
@@ -64,22 +66,65 @@
         /* style on main course container*/
         #main-coouses-Cont{
             width: 80%;
-            margin: auto;
+            margin: 50px auto;
         }
+        .course-cont >a{
+            color: black;
+            text-decoration: none;
+        }
+       
         .course{
             display: flex;
-            flex-basis: 18% 80%;
             flex-direction: row;
-            gap: 2%;
+            
         }
-        .type{
-            width: 40%;
-            height: 20px;
-            background-color: #f8f8f8;
-            font-size: 14px;
-            text-align: center;
-            padding: 3px 5px; 
+        .cs-wraper{
+            display: flex;
+            flex-direction: row;
         }
+        .type{ 
+            background-color: rgb(206, 202, 202);
+            font-size: 16px;
+            padding: 5px 10px; 
+            border-radius: 4px;
+            
+        }
+        .image-cont>img{
+            width:100%;
+        }
+        .checked{
+            color: yellow;
+            font-size: 20px;
+        }
+        .star-cont{
+            margin: 10px 0;
+        }
+        .no-of-review{
+            margin-left: 15px;
+            font-size: 12px !important;
+        }
+       .info{
+           padding-left: 30px;
+       }
+       .course-title>h2{
+        margin: 10px 0;
+       }
+       .course-title>h2:hover{
+           text-decoration: underline;
+       }
+       .un-name-wraper{
+           margin-bottom: 5px;
+           
+       }
+       .university-name{
+           color: grey;
+           font-size: 14px;
+       }
+       .divider{
+           font-size: 20px;
+           position: relative;
+           top: 2px;
+       }
     </style>
 </head>
 <body>
@@ -193,117 +238,402 @@
         <!-- free cources -->
         <div id="main-coouses-Cont">
 
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
-                </div>
-                <div>
-                    <div><h3><span>Machine Learning</span></h3></div>
-                    <div><p>Stanford University</p></div>
-                    <div class="type">Course</div>
-
-                </div>
+            <div class="course-cont">
+                <a href="#">
+                    <div class="course">
+                        <div class="image-cont">
+                            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/ml/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
+                        </div>
+                        <div class="info">
+                            <div class="course-title"><h2>Machine Learning</h2></div>
+                            <div class="un-name-wraper"><span class="university-name">Stanford University</span></div>
+                            <div class="cs-wraper">
+                                <div class="type">
+                                    <span>Course</span></div>
+                                </div>
+                               
+                            <div class="star-cont">
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                <span class="fa fa-star checked"></span>
+                                
+                                <span class="no-of-review"> <b>4.9(162,658)</b> <span class="divider">|</span> <b>4.3M</b> Students</span>
+                                 
+                            </div>
+                            <div class="dif-level">
+                                <span class="fa fa-signal"></span>
+                                <span>Mixed</span>
+                            </div>
+                        </div>
+                    </div>
+                   
+                </a>
+               
             </div>
            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/35/01fcc0dd0011e6bfe6e9e792d574eb/Logo.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
+
+           <div class="course-cont">
+            <a href="#">
+                <div class="course">
+                    <div class="image-cont">
+                        <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/35/01fcc0dd0011e6bfe6e9e792d574eb/Logo.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
+                    </div>
+                    <div class="info">
+                        <div class="course-title"><h2>Indigenous Canada</h2></div>
+                        <div class="un-name-wraper"><span class="university-name">University of Alberta</span></div>
+                        <div class="cs-wraper">
+                            <div class="type">
+                                <span>Course</span></div>
+                            </div>
+                           
+                        <div class="star-cont">
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            <span class="fa fa-star checked"></span>
+                            
+                            <span class="no-of-review"> <b>4.8(12,321)</b> <span class="divider">|</span> <b>380K</b> Students</span>
+                             
+                        </div>
+                        <div class="dif-level">
+                            <span class="fa fa-signal"></span>
+                            <span>Mixed</span>
+                        </div>
+                    </div>
                 </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
-                    
-                </div>
-            </div>
-            <hr>
+               
+            </a>
+           
+        </div>
+       <hr>
+
+       <div class="course-cont">
+        <a href="#">
             <div class="course">
                 <div class="image-cont">
                     <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/7e/aff5b0f54c11e7b5ae579a0e963c38/Logo_TheScienceofWell-Being.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
                 </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
-                    
+                <div class="info">
+                    <div class="course-title"><h2>The Science of Well-Being</h2></div>
+                    <div class="un-name-wraper"><span class="university-name">Yale University</span></div>
+                    <div class="cs-wraper">
+                        <div class="type">
+                            <span>Course</span></div>
+                        </div>
+                       
+                    <div class="star-cont">
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        <span class="fa fa-star checked"></span>
+                        
+                        <span class="no-of-review"> <b>4.9(29,588)</b> <span class="divider">|</span> <b>3.6M</b> Students</span>
+                         
+                    </div>
+                    <div class="dif-level">
+                        <span class="fa fa-signal"></span>
+                        <span>Mixed</span>
+                    </div>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/51/51d7604aba11e7ae3525d9720463e7/Shiller_FinancialMarkets_New.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+           
+        </a>
+       
+    </div>
+   <hr>
+
+   <div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/51/51d7604aba11e7ae3525d9720463e7/Shiller_FinancialMarkets_New.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>Financial Markets</h2></div>
+                <div class="un-name-wraper"><span class="university-name">Yale University</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.8(18,658)</b> <span class="divider">|</span> <b>1M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Beginner</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera-university-assets.s3.amazonaws.com/b4/339da416653830d015f5a179f864e1/square_logo_large.png?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/15/bfacf07ed011e7923c3da078b81428/images_course_image-stanford.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>Writting in Sciences</h2></div>
+                <div class="un-name-wraper"><span class="university-name">Stanford University</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.9(5,658)</b> <span class="divider">|</span> <b>250K</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Beginner</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/15/bfacf07ed011e7923c3da078b81428/images_course_image-stanford.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/99/7ab7c00f7b11e79b617dbb2116532d/contractnegotiations_Logo_080814d.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>Successful Negotiation: Essential Strategies and Skills</h2></div>
+                <div class="un-name-wraper"><span class="university-name">University of Michigan</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.8(14,758)</b> <span class="divider">|</span> <b>1.1M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Mixed</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/19/554c8d156a477690c6f0b81733c11c/intoduction-to-statistics_XFDS112.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/7b/3030708c3111e5ae965dd3ea8cdc5d/________03.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>First Step Korean</h2></div>
+                <div class="un-name-wraper"><span class="university-name">Yonsei University</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.9(36,658)</b> <span class="divider">|</span> <b>1M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Beginner</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/dc/9f98f0336111e69f8b4d7acdaafbd1/Brueghel-Children.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/40/8dbf10ac1911e68f5119007c0cf554/GettyImages-547015901-Thumbnail.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>The Strategy of Content Marketing</h2></div>
+                <div class="un-name-wraper"><span class="university-name">University of California</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.9(162,658)</b> <span class="divider">|</span> <b>4.3M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Intermediate</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/e8/c700104a3711e4805271abd0a8eb20/Moncler_IMG_4315_Ottavia-Pavesi_Cover-Mafash.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/5a/bd98507ed711e385bc8989c263e007/brain-cornerfix.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&fit=fill&bg=FFF&q=25" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>Understanding the Brain: The Neurobiology of Everyday Life</h2></div>
+                <div class="un-name-wraper"><span class="university-name">University of Chicago</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.9(62,658)</b> <span class="divider">|</span> <b>3M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Beginner</span>
                 </div>
             </div>
-            <hr>
-            <div class="course">
-                <div class="image-cont">
-                    <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/40/8dbf10ac1911e68f5119007c0cf554/GettyImages-547015901-Thumbnail.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
-                </div>
-                <div>
-                    <div><h3><span></span></h3></div>
-                    <div><p></p></div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera/topics/organalysis/large-icon.png?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>Organization Analysis</h2></div>
+                <div class="un-name-wraper"><span class="university-name">Stanford University</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
                     
+                    <span class="no-of-review"> <b>4.6(1,658)</b> <span class="divider">|</span> <b>94K</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Beginner</span>
                 </div>
             </div>
-            <hr>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+
+<div class="course-cont">
+    <a href="#">
+        <div class="course">
+            <div class="image-cont">
+                <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera-course-photos/bb/62e6a0120b11e6bc32c330496bd91a/Career-Development.jpg?auto=format%2Ccompress&dpr=1&w=150&h=150&q=25&fit=fill&bg=FFF" alt="">
+            </div>
+            <div class="info">
+                <div class="course-title"><h2>English for career Career-Development</h2></div>
+                <div class="un-name-wraper"><span class="university-name">University of Pennsylvania</span></div>
+                <div class="cs-wraper">
+                    <div class="type">
+                        <span>Course</span></div>
+                    </div>
+                   
+                <div class="star-cont">
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    <span class="fa fa-star checked"></span>
+                    
+                    <span class="no-of-review"> <b>4.8(12,658)</b> <span class="divider">|</span> <b>1.5M</b> Students</span>
+                     
+                </div>
+                <div class="dif-level">
+                    <span class="fa fa-signal"></span>
+                    <span>Mixed</span>
+                </div>
+            </div>
+        </div>
+       
+    </a>
+   
+</div>
+<hr>
+            
         </div>
 </body>
 </html>
