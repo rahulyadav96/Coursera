@@ -168,6 +168,7 @@
             font-size: 38px;
             line-height: 48px;
             font-weight: 600;
+            color: black;
         }
 
         #hwe {
@@ -193,6 +194,7 @@
             height: 40vh;
             width: 90%;
             margin: auto;
+            padding-bottom: 10%;
             /* background-color: #bfd5f4; */
         }
 
@@ -202,6 +204,11 @@
             font-size: 38px;
             line-height: 48px;
             font-weight: 600;
+            color: black;
+        }
+
+        #com_body {
+            height: 100%;
         }
 
         .com_box {
@@ -227,109 +234,231 @@
             font-size: 22px;
             line-height: 24px;
             font-weight: 600;
-            color: #1f1f1f ;
+            color: #1f1f1f;
             text-align: center;
+        }
+
+        /* css for High-impact skill  */
+        #skill_box {
+            height: 120vh;
+            width: 90%;
+            margin: auto;
+        }
+
+        #box_cont {
+            background-color: white;
+            width: 100%;
+            margin-top: 5%;
+            height: 60%;
+        }
+
+        .box {
+            float: left;
+            width: 22%;
+            margin: 1.5%;
+            height: 90%;
+            box-shadow: 0 2px 20px rgb(131 131 131 / 50%);
+        }
+
+        .box_image {
+            height: 42%;
+        }
+
+        .box_image img {
+            width: 100%;
+        }
+
+        .box_info {
+            height: 58%;
+            width: 90%;
+            margin: 5%;
+        }
+
+        .box_det {
+            height: 60%;
+            width: 100%;
+        }
+        .box_det h3 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .box_link {
+            margin-top: 10%;
+        }
+
+        .box_link a {
+            color: #0056d2;
+            text-decoration: none;
+
         }
     </style>
 </head>
 
 <body>
-    <div id="head">
-        <div id="left"><img src="https://www.coursera.org/business/wp-content/themes/c4b/images/logos/c4b-h-blue.svg"
-                alt="Coursera for Business"></div>
-        <div id="right">
-            <button>Contact Sales</button>
-            <div>Blog</div>
-            <div>|</div>
-            <div>Resources</div>
-            <div>|</div>
-            <div>Compare Plans</div>
-            <div>|</div>
-            <div>Content</div>
-            <div>|</div>
-            <div>Product</div>
-            <div>|</div>
-            <div class="linkColor">Home</div>
+    <div>
+        <div id="head">
+            <div id="left"><img
+                    src="https://www.coursera.org/business/wp-content/themes/c4b/images/logos/c4b-h-blue.svg"
+                    alt="Coursera for Business"></div>
+            <div id="right">
+                <button>Contact Sales</button>
+                <div>Blog</div>
+                <div>|</div>
+                <div>Resources</div>
+                <div>|</div>
+                <div>Compare Plans</div>
+                <div>|</div>
+                <div>Content</div>
+                <div>|</div>
+                <div>Product</div>
+                <div>|</div>
+                <div class="linkColor">Home</div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-    </div>
-    <div id="fst_cont">
-        <div id="fstLeft">
-            <h1 id="flh">Create true business impact with Coursera</h1>
-            <p>Provide world-class training developed by leading universities and companies. All on Coursera for
-                Business.</p>
-            <div id="fstbtn">Contact sales</div>
-            <div id="soa">
-                <span>Upskilling a small team? <a
-                        href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise"
-                        target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+        <div id="fst_cont">
+            <div id="fstLeft">
+                <h1 id="flh">Create true business impact with Coursera</h1>
+                <p>Provide world-class training developed by leading universities and companies. All on Coursera for
+                    Business.</p>
+                <div id="fstbtn">Contact sales</div>
+                <div id="soa">
+                    <span>Upskilling a small team? <a
+                            href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise"
+                            target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+                </div>
+            </div>
+            <div id="fstRight"><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/12/Enterprise_C4B_V2-crunch.png"
+                    alt=""></div>
+        </div>
+        <div id="bar">
+            <p><span style="font-weight: 400;">Discover the latest state of skills around the world by </span><a
+                    href="https://www.coursera.org/global-skills-report?utm_campaign=gsr-2021&amp;utm_content=c4b-thin-banner-gsr&amp;utm_medium=website&amp;utm_source=business"
+                    target="_blank" rel="noopener"><span style="font-weight: 400;">downloading the Global Skills
+                        Report.</span></a></p>
+        </div>
+        <div id="uni">
+            <h1 id="hwe">Access 4,000+ courses, 100+ SkillSets, and 1,000+ Guided Projects from top universities and
+                companies</h1>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/il_square_logo_large.png"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/yale_square_logo_large.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/mu_square_logo_large.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/ucd.png" alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/GreyLogoName192x192.png"
+                    alt="">
+            </div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/11/atlassian-logo-gradient-vertical-white.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/uc-sandiego.png" alt="">
+            </div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/nyu.png" alt=""></div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/03/University-of-Colorado-System.jpg"
+                    alt=""></div>
+        </div>
+        <div id="com">
+            <div id=com_head>
+                <h1>How companies use Coursera for Business</h1>
+            </div>
+            <div id="com_body">
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg"
+                            alt="Deliver on strategic business goals by building critical skills "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg">
+                    </div>
+                    <p class="com_det">
+                        Deliver on strategic business goals by building critical skills </p>
+                </div>
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg"
+                            alt="Realize the full value of technology investments "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg">
+                    </div>
+                    <p class="com_det">
+                        Realize the full value of technology investments </p>
+                </div>
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg"
+                            alt="Build a data-driven, digitally-fluent workforce "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg">
+                    </div>
+                    <p class="com_det">
+                        Build a data-driven, digitally-fluent workforce </p>
+                </div>
             </div>
         </div>
-        <div id="fstRight"><img
-                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/12/Enterprise_C4B_V2-crunch.png"
-                alt=""></div>
-    </div>
-    <div id="bar">
-        <p><span style="font-weight: 400;">Discover the latest state of skills around the world by </span><a
-                href="https://www.coursera.org/global-skills-report?utm_campaign=gsr-2021&amp;utm_content=c4b-thin-banner-gsr&amp;utm_medium=website&amp;utm_source=business"
-                target="_blank" rel="noopener"><span style="font-weight: 400;">downloading the Global Skills
-                    Report.</span></a></p>
-    </div>
-    <div id="uni">
-        <h1 id="hwe">Access 4,000+ courses, 100+ SkillSets, and 1,000+ Guided Projects from top universities and
-            companies</h1>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/il_square_logo_large.png"
-                alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/yale_square_logo_large.jpeg"
-                alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/mu_square_logo_large.jpeg"
-                alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/ucd.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/GreyLogoName192x192.png" alt="">
-        </div>
-        <div><img
-                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/11/atlassian-logo-gradient-vertical-white.jpeg"
-                alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/uc-sandiego.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/nyu.png" alt=""></div>
-        <div><img
-                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/03/University-of-Colorado-System.jpg"
-                alt=""></div>
-    </div>
-    <div id="com">
-        <div id=com_head>
-            <h1>How companies use Coursera for Business</h1>
-        </div>
-        <div id="com_body">
-            <div class="com_box">
-                <div class="icon">
-                    <img class="img_icon"
-                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg"
-                        alt="Deliver on strategic business goals by building critical skills "
-                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg">
+        <div id="skill_box">
+            <h1>High-impact skill development for all teams</h1>
+            <div id="box_cont">
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1192313070-170667a_Edit-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Build in-demand skills for the business</h3>
+                            <p>Accelerate skill acquisition with SkillSets, turnkey job-based learning programs.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
                 </div>
-                <p class="com_det">
-                    Deliver on strategic business goals by building critical skills </p>
-            </div>
-            <div class="com_box">
-                <div class="icon">
-                    <img class="img_icon"
-                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg"
-                        alt="Realize the full value of technology investments "
-                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg">
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1060903200-170667a-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Fast-track digital transformation with Academies</h3>
+                            <p>Deploy targeted learning for tech teams and build skills for everyone.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
                 </div>
-                <p class="com_det">
-                    Realize the full value of technology investments </p>
-            </div>
-            <div class="com_box">
-                <div class="icon">
-                    <img class="img_icon"
-                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg"
-                        alt="Build a data-driven, digitally-fluent workforce "
-                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg">
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1175077096-170667a_Edit-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Drive skill mastery with hands-on learning</h3>
+                            <p>Deliver applied tech and data skills with 1,000+ Guided Projects and in-course lab
+                                assignments.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
                 </div>
-                <p class="com_det">
-                    Build a data-driven, digitally-fluent workforce </p>
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1205248124-170667a_Edit-1-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Track, measure, and benchmark actual skill proficiency</h3>
+                            <p>Quantify employee progress in technical and human skills with continuous assessments.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
