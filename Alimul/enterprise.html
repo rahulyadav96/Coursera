@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png"
+        sizes="96x96">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
@@ -18,8 +20,9 @@
             clear: both;
         }
 
+        /* css for nav bar */
         #head {
-            height: 8vh;
+            height: 10vh;
             border-bottom: 1px solid rgba(0, 0, 0, .1);
             color: #1f1f1f;
         }
@@ -37,7 +40,7 @@
         #right {
             float: right;
             height: 100%;
-            width: 60%;
+            width: 64%;
             display: flex;
             flex-direction: row-reverse;
         }
@@ -46,7 +49,7 @@
             padding: 1.3%;
             float: right;
             height: 75%;
-            margin-top: auto;
+            margin-top: 1%;
             margin-bottom: auto;
         }
 
@@ -54,17 +57,18 @@
             border: none;
             background-color: #0056d2;
             width: 14%;
-            height: 80%;
-            margin-top: auto;
-            margin-bottom: auto;
+            height: 70%;
+            margin-top: 1%;
+            margin-bottom: 1.25%;
             margin-left: 1%;
             border-radius: 2px;
             font-size: 14px;
             color: #ffff;
             text-align: center;
-            font-weight: 500;
+            font-weight: 100;
         }
 
+        /* css for the first container. It's divided into two parts, fstLeft and fstRight  */
         #fst_cont {
             height: 83vh;
             width: 90%;
@@ -81,9 +85,10 @@
             /* background-color: bisque; */
         }
 
-        h1 {
+        #flh {
             font-size: 42px;
             line-height: 52px;
+            text-align: unset;
         }
 
         #fstLeft p {
@@ -118,55 +123,616 @@
             color: #fff;
             width: 35%;
         }
+
         #soa {
             margin-top: 5%;
         }
-        a {
+
+        #fstLeft a {
             color: #0056d2;
             text-decoration: none;
         }
+
         .linkColor {
             color: #0056d2;
+        }
+
+        /* css for the second part that is just a bar>>discover the latest state of skills...... */
+        #bar {
+            height: 15vh;
+            margin-top: 2%;
+            background-color: #ebf3ff;
+            text-align: center;
+        }
+
+        #bar p {
+            padding-top: 2.5%;
+            font-size: 24px;
+            font-family: 'Source Sans Pro', sans-serif !important;
+            font-weight: 400;
+            color: #1f1f1f;
+        }
+
+        #bar a {
+            color: #1f1f1f;
+        }
+
+        /* css for the university logo div */
+        #uni {
+            height: 45vh;
+            width: 90%;
+            margin: auto;
+        }
+
+        #uni h1 {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 600;
+            color: black;
+        }
+
+        #hwe {
+            width: 95%;
+            margin-bottom: 4%;
+        }
+
+        #uni div {
+            height: 40%;
+            width: 10.93%;
+            margin: auto;
+            float: left;
+        }
+
+        #uni div img {
+            width: 50%;
+            margin-left: 25%;
+
+        }
+
+        /* css for how companies use coursera */
+        #com {
+            height: 40vh;
+            width: 90%;
+            margin: auto;
+            padding-bottom: 10%;
+            /* background-color: #bfd5f4; */
+        }
+
+        h1 {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 600;
+            color: black;
+        }
+
+        #com_body {
+            height: 100%;
+        }
+
+        .com_box {
+            /* border: 1px solid red; */
+            float: left;
+            width: 31.32%;
+            height: 70%;
+            margin: 1%;
+        }
+
+        .icon {
+            height: 70%;
+        }
+
+        .img_icon {
+            width: 36%;
+            margin-left: 32%;
+            margin-right: 32%;
+        }
+
+        .com_det {
+            width: 85%;
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #1f1f1f;
+            text-align: center;
+        }
+
+        /* css for High-impact skill  */
+        #skill_box {
+            height: 100vh;
+            width: 90%;
+            margin: auto;
+            /* background-color: red; */
+        }
+
+        #box_cont {
+            /* background-color: wheat; */
+            width: 100%;
+            margin-top: 5%;
+            height: 72%;
+            /* background-color: #0056d2; */
+
+        }
+
+        .box {
+            float: left;
+            width: 22%;
+            margin: 1.5%;
+            height: 100%;
+            box-shadow: 0 2px 20px rgb(131 131 131 / 50%);
+        }
+
+        .box_image {
+            height: 42%;
+        }
+
+        .box_image img {
+            width: 100%;
+        }
+
+        .box_info {
+            height: 58%;
+            width: 90%;
+            margin: 5%;
+        }
+
+        .box_det {
+            height: 60%;
+            width: 100%;
+        }
+
+        .box_det h3 {
+            height: 50%;
+            width: 100%;
+        }
+
+        .box_link {
+            margin-top: 10%;
+        }
+
+        .box_link a {
+            color: #0056d2;
+            text-decoration: none;
+
+        }
+
+        /* css for Explore content developed by leading  */
+        #courses {
+            height: 160vh;
+            margin: auto;
+            background-color: #ebf3ff;
+        }
+
+        #box_cont2 {
+            /* background-color: wheat; */
+            width: 100%;
+            margin-top: 2%;
+            height: 72%;
+            /* background-color: #0056d2; */
+
+        }
+
+        .cbox {
+            float: left;
+            width: 22%;
+            margin: 1.5%;
+            height: 47%;
+            box-shadow: 0 2px 20px rgb(131 131 131 / 50%);
+            background-color: #fff;
+        }
+
+        #bbox {
+            background-color: #003583;
+            color: #fff;
+            font-size: x-large;
+            line-height: 39.12px;
+        }
+
+        .cbox_image {
+            height: 25%;
+        }
+
+        .cbox_image img {
+            width: 100%;
+        }
+
+        .cbox2 {
+            height: 25%;
+            width: 25%;
+            box-shadow: 0 0 3px 0 rgb(0 0 0 / 25%);
+            margin-left: 10%;
+            margin-top: -5%;
+        }
+
+        .cbox2 img {
+            height: 100%;
+        }
+
+        .box_info2 {
+            height: 58%;
+            width: 90%;
+            margin: 5%;
+            margin-top: -3%;
+            font-size: 22px;
+        }
+
+        #coour {
+            margin-top: 5%;
+            border: 1px solid #ebf3ff;
+        }
+
+        /* css for "companies that use coursera" */
+        #comp {
+            height: 45vh;
+            width: 90%;
+            margin: auto;
+        }
+
+        #comp h1 {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 600;
+            color: black;
+        }
+
+        #compHead {
+            width: 95%;
+            margin-bottom: 4%;
+        }
+
+        #comp div {
+            height: 20%;
+            width: 16%;
+            margin: auto;
+            float: left;
+            /* border: 1px solid red; */
+        }
+
+        #comp div img {
+            height: 100%;
+
+
+        }
+
+        #horr img {
+            /* display: none; */
+            margin-left: 30%;
+            /* height: 50px;
+            width: 50px; */
+        }
+
+        /* youtube link photo */
+        #yt {
+            width: 60%;
+            margin: auto;
+        }
+        /* css for start building */
+        #startB {
+            width: 100%;
+            margin-top: 5%;
+            height: 40vh;
+            background-color: #003583;
         }
     </style>
 </head>
 
 <body>
-    <div id="head">
-        <div id="left"><img src="https://www.coursera.org/business/wp-content/themes/c4b/images/logos/c4b-h-blue.svg"
-                alt="Coursera for Business"></div>
-        <div id="right">
-            <button>Contact Sales</button>
-            <div>Blog</div>
-            <div>|</div>
-            <div>Resources</div>
-            <div>|</div>
-            <div>Compare Plans</div>
-            <div>|</div>
-            <div>Content</div>
-            <div>|</div>
-            <div>Product</div>
-            <div>|</div>
-            <div class="linkColor">Home</div>
+    <div>
+        <div id="head">
+            <div id="left"><img
+                    src="https://www.coursera.org/business/wp-content/themes/c4b/images/logos/c4b-h-blue.svg"
+                    alt="Coursera for Business"></div>
+            <div id="right">
+                <button>Contact Sales</button>
+                <div>Blog</div>
+                <div>|</div>
+                <div>Resources</div>
+                <div>|</div>
+                <div>Compare Plans</div>
+                <div>|</div>
+                <div>Content</div>
+                <div>|</div>
+                <div>Product</div>
+                <div>|</div>
+                <div class="linkColor">Home</div>
+            </div>
+            <div class="clear"></div>
         </div>
-        <div class="clear"></div>
-    </div>
-    <div id="fst_cont">
-        <div id="fstLeft">
-            <h1>Create true business impact with Coursera</h1>
-            <p>Provide world-class training developed by leading universities and companies. All on Coursera for
-                Business.</p>
-            <div id="fstbtn">Contact sales</div>
-            <div id="soa">
-                <span>Upskilling a small team? <a
-                    href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise"
-                    target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+        <div id="fst_cont">
+            <div id="fstLeft">
+                <h1 id="flh">Create true business impact with Coursera</h1>
+                <p>Provide world-class training developed by leading universities and companies. All on Coursera for
+                    Business.</p>
+                <div id="fstbtn">Contact sales</div>
+                <div id="soa">
+                    <span>Upskilling a small team? <a
+                            href="https://www.coursera.org/business/teams?utm_campaign=c4b&amp;utm_content=teams-cta-below-hero&amp;utm_medium=website&amp;utm_source=enterprise"
+                            target="_blank" rel="noopener">Check out Coursera for Teams.</a></span>
+                </div>
+            </div>
+            <div id="fstRight"><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/12/Enterprise_C4B_V2-crunch.png"
+                    alt=""></div>
+        </div>
+        <div id="bar">
+            <p><span style="font-weight: 400;">Discover the latest state of skills around the world by </span><a
+                    href="https://www.coursera.org/global-skills-report?utm_campaign=gsr-2021&amp;utm_content=c4b-thin-banner-gsr&amp;utm_medium=website&amp;utm_source=business"
+                    target="_blank" rel="noopener"><span style="font-weight: 400;">downloading the Global Skills
+                        Report.</span></a></p>
+        </div>
+        <div id="uni">
+            <h1 id="hwe">Access 4,000+ courses, 100+ SkillSets, and 1,000+ Guided Projects from top universities and
+                companies</h1>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/il_square_logo_large.png"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/yale_square_logo_large.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/mu_square_logo_large.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/ucd.png" alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/GreyLogoName192x192.png"
+                    alt="">
+            </div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/11/atlassian-logo-gradient-vertical-white.jpeg"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/uc-sandiego.png" alt="">
+            </div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/nyu.png" alt=""></div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/03/University-of-Colorado-System.jpg"
+                    alt=""></div>
+        </div>
+        <div id="com">
+            <div id=com_head>
+                <h1>How companies use Coursera for Business</h1>
+            </div>
+            <div id="com_body">
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg"
+                            alt="Deliver on strategic business goals by building critical skills "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg">
+                    </div>
+                    <p class="com_det">
+                        Deliver on strategic business goals by building critical skills </p>
+                </div>
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg"
+                            alt="Realize the full value of technology investments "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg">
+                    </div>
+                    <p class="com_det">
+                        Realize the full value of technology investments </p>
+                </div>
+                <div class="com_box">
+                    <div class="icon">
+                        <img class="img_icon"
+                            data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg"
+                            alt="Build a data-driven, digitally-fluent workforce "
+                            src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg">
+                    </div>
+                    <p class="com_det">
+                        Build a data-driven, digitally-fluent workforce </p>
+                </div>
             </div>
         </div>
-        <div id="fstRight"><img
-                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/12/Enterprise_C4B_V2-crunch.png"
-                alt=""></div>
+        <div id="skill_box">
+            <h1>High-impact skill development for all teams</h1>
+            <div id="box_cont">
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1192313070-170667a_Edit-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Build in-demand skills for the business</h3>
+                            <p>Accelerate skill acquisition with SkillSets, turnkey job-based learning programs.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1060903200-170667a-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Fast-track digital transformation with Academies</h3>
+                            <p>Deploy targeted learning for tech teams and build skills for everyone.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1175077096-170667a_Edit-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Drive skill mastery with hands-on learning</h3>
+                            <p>Deliver applied tech and data skills with 1,000+ Guided Projects and in-course lab
+                                assignments.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
+                </div>
+                <div class="box">
+                    <div class="box_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/gettyimages-1205248124-170667a_Edit-1-1.jpg">
+                    </div>
+                    <div class="box_info">
+                        <div class="box_det">
+                            <h3>Track, measure, and benchmark actual skill proficiency</h3>
+                            <p>Quantify employee progress in technical and human skills with continuous assessments.</p>
+                        </div>
+                        <div class="box_link"><a
+                                href="https://www.coursera.org/business/products?utm_campaign=c4b&amp;utm_content=in-demand-skills-hp&amp;utm_medium=website&amp;utm_source=enterprise#product-skills"
+                                target="_blank">Learn more</a></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="courses">
+            <div id="coour">
+                <h1>Explore content developed by leading universities and companies</h1>
+            </div>
+            <div id="box_cont2">
+                <div class="cbox" id="bbox">
+
+                    <div class="box_info">
+                        <div class="box_det">
+                            <p>Popular courses from B2B learners in 2020</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/02/AI-for-everyone-enterprise.png">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/02/DeepLearning_DL.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>AI for everyone</p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/CourseTile_NeuralNetworks.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/02/DeepLearning_DL.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>Neural Networks & Deep Learning </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/CourseTile_IllinoisMarketing.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/University-of-Illinois.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>Marketing in a Digital World </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/CourseTile_YaleNegotiation.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Yale-University.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>Becoming a Principled and Persuasive Negotiator </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/CourseTile_NorthwesternHighPerformanceCollab.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Northwestern.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>High Performance Collaboration </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/CourseTile_UVADesignThinking.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/University-of-Virginia.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>Design Thinking for Innovation </p>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="cbox">
+                    <div class="cbox_image"><img alt="Build in-demand skills for the business"
+                            src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_Course_LearnToLearn.jpg">
+                    </div>
+                    <div class="cbox2">
+                        <img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/UC-San-Diego.png"
+                            alt="">
+                    </div>
+                    <div class="box_info2">
+                        <div class="box_det">
+                            <p>Learning How to Learn</p>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div id="comp">
+            <h1 id="compHead">Companies that innovate use Coursera</h1>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/pg.png" alt=""></div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Loreal-1.png"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/11/SignifyLogo-1.png" alt="">
+            </div>
+            <div id="horr"><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/07/GE-Logo-1-e1626191342716.png"
+                    alt=""></div>
+            <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/04/danone.png" alt="">
+            </div>
+            <div><img
+                    src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/Home_CustomerLogo_Tata-3.png"
+                    alt="">
+            </div>
+            <div class="clear"></div>
+        </div>
+        <div id="yt"><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2021/03/c4b_1.jpg" alt=""></div>
     </div>
+    <div id="startB"></div>
 </body>
 
 </html>
+// All rights reserved by coursera.
+// I have just cloned the webpage to practice of html and css.
+~~ @alhassan069
