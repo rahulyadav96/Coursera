@@ -83,9 +83,10 @@
             /* background-color: bisque; */
         }
 
-        h1 {
+        #flh {
             font-size: 42px;
             line-height: 52px;
+            text-align: unset;
         }
 
         #fstLeft p {
@@ -156,7 +157,7 @@
 
         /* css for the university logo div */
         #uni {
-            height: 40vh;
+            height: 45vh;
             width: 90%;
             margin: auto;
         }
@@ -168,19 +169,67 @@
             line-height: 48px;
             font-weight: 600;
         }
+
+        #hwe {
+            width: 95%;
+            margin-bottom: 4%;
+        }
+
         #uni div {
             height: 40%;
             width: 10.93%;
             margin: auto;
             float: left;
         }
+
         #uni div img {
             width: 50%;
-            margin-left:25% ;
+            margin-left: 25%;
 
         }
-        /* css for how companies use coursera */
 
+        /* css for how companies use coursera */
+        #com {
+            height: 40vh;
+            width: 90%;
+            margin: auto;
+            /* background-color: #bfd5f4; */
+        }
+
+        h1 {
+            margin-top: 5%;
+            text-align: center;
+            font-size: 38px;
+            line-height: 48px;
+            font-weight: 600;
+        }
+
+        .com_box {
+            /* border: 1px solid red; */
+            float: left;
+            width: 31.32%;
+            height: 70%;
+            margin: 1%;
+        }
+
+        .icon {
+            height: 70%;
+        }
+
+        .img_icon {
+            width: 36%;
+            margin-left: 32%;
+            margin-right: 32%;
+        }
+
+        .com_det {
+            width: 85%;
+            font-size: 22px;
+            line-height: 24px;
+            font-weight: 600;
+            color: #1f1f1f ;
+            text-align: center;
+        }
     </style>
 </head>
 
@@ -206,7 +255,7 @@
     </div>
     <div id="fst_cont">
         <div id="fstLeft">
-            <h1>Create true business impact with Coursera</h1>
+            <h1 id="flh">Create true business impact with Coursera</h1>
             <p>Provide world-class training developed by leading universities and companies. All on Coursera for
                 Business.</p>
             <div id="fstbtn">Contact sales</div>
@@ -227,16 +276,62 @@
                     Report.</span></a></p>
     </div>
     <div id="uni">
-        <h1>Access 4,000+ courses, 100+ SkillSets, and 1,000+ Guided Projects from top universities and companies</h1>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/il_square_logo_large.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/yale_square_logo_large.jpeg" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/mu_square_logo_large.jpeg" alt=""></div>
+        <h1 id="hwe">Access 4,000+ courses, 100+ SkillSets, and 1,000+ Guided Projects from top universities and
+            companies</h1>
+        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/il_square_logo_large.png"
+                alt=""></div>
+        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/yale_square_logo_large.jpeg"
+                alt=""></div>
+        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/10/mu_square_logo_large.jpeg"
+                alt=""></div>
         <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/ucd.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/GreyLogoName192x192.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/11/atlassian-logo-gradient-vertical-white.jpeg" alt=""></div>
+        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2018/02/GreyLogoName192x192.png" alt="">
+        </div>
+        <div><img
+                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/11/atlassian-logo-gradient-vertical-white.jpeg"
+                alt=""></div>
         <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/uc-sandiego.png" alt=""></div>
         <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2019/01/nyu.png" alt=""></div>
-        <div><img src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/03/University-of-Colorado-System.jpg" alt=""></div>
+        <div><img
+                src="https://149362230.v2.pressablecdn.com/wp-content/uploads/2020/03/University-of-Colorado-System.jpg"
+                alt=""></div>
+    </div>
+    <div id="com">
+        <div id=com_head>
+            <h1>How companies use Coursera for Business</h1>
+        </div>
+        <div id="com_body">
+            <div class="com_box">
+                <div class="icon">
+                    <img class="img_icon"
+                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg"
+                        alt="Deliver on strategic business goals by building critical skills "
+                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_strategies.svg">
+                </div>
+                <p class="com_det">
+                    Deliver on strategic business goals by building critical skills </p>
+            </div>
+            <div class="com_box">
+                <div class="icon">
+                    <img class="img_icon"
+                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg"
+                        alt="Realize the full value of technology investments "
+                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_technology.svg">
+                </div>
+                <p class="com_det">
+                    Realize the full value of technology investments </p>
+            </div>
+            <div class="com_box">
+                <div class="icon">
+                    <img class="img_icon"
+                        data-src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg"
+                        alt="Build a data-driven, digitally-fluent workforce "
+                        src="https://www.coursera.org/business/wp-content/uploads/2021/03/coursera_insights.svg">
+                </div>
+                <p class="com_det">
+                    Build a data-driven, digitally-fluent workforce </p>
+            </div>
+        </div>
     </div>
 </body>
 
