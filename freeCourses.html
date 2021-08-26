@@ -7,253 +7,8 @@
     <title>Top Free Online Courses | Learn Online with Coursera</title>
     <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="freeCourseStyle.css">
 
-    <style>
-        body{
-            margin: 0;
-            font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-            background-color: #fff;
-        }
-        /* navbar Style*/
-        .f_clear{
-    clear: both;
-}
-.blueBgColor{
-    background-color: blue;
-    color: white;
-}
-.nav-bar{
-    height: 100px;
-    /* border:2px solid black */
-
-    margin: 5px;
-
-}
-
-
-
-.arrow{
-    height: 100px;
-}
-
-
-.nav{
-    /* height: 80px; */
-    width: 100px;
-    /* height: 50px; */
-}
-#logo{
-    /* height: 100px; */
-    width: 150px;
-}
-
-.left> div{
-    margin: 10px;
-    margin-top: 20px;
-    float: left;
-}
-#exp_nav{
-    margin-left: 30px;
-    /* margin-top: -20px !important; */
-    font-size: 20px;
-    background-color: blue;
-    /* height: 40px; */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius:5px;
-}
-
-
-.icon{
-    width: 10px;
-    filter: invert();
-}
-
-.search_icon{
-    /* height: 20px; */
-    width: 20px;
-    filter: invert();
-    /* background-color: black; */
-    /* margin-left: -30px; */
-
-    /* display: inline; */
-    /* margin-top: 10px; */
-    /* background-color: blue; */
-}
-
-#search>input{
-    border:1px solid black;
-    width: 300px;
-    height: 38px;
-    line-height: 40px;
-    /* margin: 10px; */
-
-    /* padding: 5px; */
-    border-radius: 5px 0px 0px 5px;
-    /* text-align:center; */
-}
-
-
-#icon_search{
-    padding: 10px;
-    background-color: blue;
-    margin-left: -11px;
-    height: 20px;
-    border: 1px solid black;
-    /* width: 300px; */
-    border-radius: 0px 5px 5px 0px;
-
-}
-
-.right{
-    /* margin-right: 50px; */
-    /* width: 800px; */
-
-    display: flex;
-    margin-left: 800px;
-    margin-top: -40px;
-}
-
-.right> li{
-
-  flex-direction: column-reverse;
-    /* margin-right: 100px; */
-    /* margin-top: -30px; */
-    list-style: none;
-    margin-left: 20px;
-    /* font-size: 20px; */
-    cursor: pointer;
-}
-.right>li> button{
-    height: 40px;
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    margin-top: -20px;
-    border: none;
-    border-radius: 5px;
-
-}
-#lg{
-    text-decoration: none;
-
-}
-
-        /* style on head content*/
-        .head-cont{
-            width: 80%;
-            margin: 20px auto ;
-        }
-        .head-cont>div{
-            margin: 0;
-        }
-        li{
-            display: inline;
-            text-decoration: none;
-            margin-right: 5px;
-        }
-        #filter-con {
-            background-color: #f8f8f8 ;
-            font-size: 16px;
-            width: 98%;
-            margin: 0;
-            padding: 1%;
-        }
-        .no_of_results{
-            margin: 1%;
-        }
-        .filter-opt{
-            width: 88%;
-            margin-left: 10%;
-        }
-        .filter-opt>p{
-            font-size: 14px;
-            margin: 4px 0;
-        }
-        .sele-div{
-            display: flex;
-            flex-direction: row;
-            
-            font-size: 16px;
-            padding-bottom: 20px;
-            gap: 1%;
-        }
-        ul{
-            width: 100%;
-            margin: 0;
-            padding-left: 0;
-        }
-        select{
-            width: 100%;
-            height: 30px;
-            padding: 5px;
-            cursor: pointer;
-        }
-
-        /* style on main course container*/
-        #main-coouses-Cont{
-            width: 80%;
-            margin: 50px auto;
-        }
-        .course-cont >a{
-            color: black;
-            text-decoration: none;
-        }
-       
-        .course{
-            display: flex;
-            flex-direction: row;
-            
-        }
-        .cs-wraper{
-            display: flex;
-            flex-direction: row;
-        }
-        .type{ 
-            background-color: rgb(206, 202, 202);
-            font-size: 16px;
-            padding: 5px 10px; 
-            border-radius: 4px;
-            
-        }
-        .image-cont>img{
-            width:100%;
-        }
-        .checked{
-            color: yellow;
-            font-size: 20px;
-        }
-        .star-cont{
-            margin: 10px 0;
-        }
-        .no-of-review{
-            margin-left: 15px;
-            font-size: 12px !important;
-        }
-       .info{
-           padding-left: 30px;
-       }
-       .course-title>h2{
-        margin: 10px 0;
-       }
-       .course-title>h2:hover{
-           text-decoration: underline;
-       }
-       .un-name-wraper{
-           margin-bottom: 5px;
-           
-       }
-       .university-name{
-           color: grey;
-           font-size: 14px;
-       }
-       .divider{
-           font-size: 20px;
-           position: relative;
-           top: 2px;
-       }
-    </style>
 </head>
 <body>
     <!--Navigation bar-->
@@ -343,12 +98,12 @@
                         </select>
                     </div>
                     <div class="lavel">
-                        <select>
+                        <select id="level-option" onchange="filterElement()">
                             <option selected hidden >Level</option>
-                            <option>Beginner</option>
-                            <option>Mixed</option>
-                            <option>Intermediate</option>
-                            <option>Advanced</option>
+                            <option >Beginner</option>
+                            <option >Mixed</option>
+                            <option >Intermediate</option>
+                            <option >Advanced</option>
                         </select>
                     </div>
                     <div class="dur">
@@ -436,15 +191,15 @@
                             </div>
                             <div class="dif-level">
                                 <span class="fa fa-signal"></span>
-                                <span>Mixed</span>
+                                <span class="crs-level">Mixed</span>
                             </div>
                         </div>
                     </div>
                    
                 </a>
-               
+                <hr>
             </div>
-           <hr>
+           
 
            <div class="course-cont">
             <a href="#">
@@ -472,15 +227,15 @@
                         </div>
                         <div class="dif-level">
                             <span class="fa fa-signal"></span>
-                            <span>Mixed</span>
+                            <span class="crs-level">Mixed</span>
                         </div>
                     </div>
                 </div>
                
             </a>
-           
+            <hr>
         </div>
-       <hr>
+       
 
        <div class="course-cont">
         <a href="#">
@@ -508,15 +263,15 @@
                     </div>
                     <div class="dif-level">
                         <span class="fa fa-signal"></span>
-                        <span>Mixed</span>
+                        <span class="crs-level">Mixed</span>
                     </div>
                 </div>
             </div>
            
         </a>
-       
+        <hr>
     </div>
-   <hr>
+   
 
    <div class="course-cont">
     <a href="#">
@@ -544,15 +299,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Beginner</span>
+                    <span class="crs-level"> Beginner</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr>
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -580,15 +335,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Beginner</span>
+                    <span class="crs-level">Beginner</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr>
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -601,7 +356,7 @@
                 <div class="un-name-wraper"><span class="university-name">University of Michigan</span></div>
                 <div class="cs-wraper">
                     <div class="type">
-                        <span>Course</span></div>
+                        <span class="crs-level">Course</span></div>
                     </div>
                    
                 <div class="star-cont">
@@ -616,15 +371,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Mixed</span>
+                    <span class="crs-level">Mixed</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr> 
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -652,15 +407,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Beginner</span>
+                    <span class="crs-level">Beginner</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr> 
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -688,15 +443,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Intermediate</span>
+                    <span class="crs-level">Intermediate</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr> 
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -724,15 +479,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Beginner</span>
+                    <span class="crs-level">Beginner</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr> 
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -760,15 +515,15 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Beginner</span>
+                    <span class="crs-level" >Beginner</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr>
 </div>
-<hr>
+
 
 <div class="course-cont">
     <a href="#">
@@ -796,16 +551,47 @@
                 </div>
                 <div class="dif-level">
                     <span class="fa fa-signal"></span>
-                    <span>Mixed</span>
+                    <span class="crs-level">Mixed</span>
                 </div>
             </div>
         </div>
        
     </a>
-   
+    <hr>  
 </div>
-<hr>
+
             
     </div>
 </body>
 </html>
+
+<script>
+
+
+
+let parent = document.getElementById("main-coouses-Cont");
+console.log(parent);
+
+function filterElement(){
+    let option = document.getElementById("level-option").value;
+    console.log(option);
+
+    let course = parent.getElementsByClassName("course-cont");
+    console.log(course);
+
+        for(let i = 0; i< course.length; i++){
+            console.log(course[i]);
+
+            let crs_level = course[i].getElementsByClassName("crs-level");
+            console.log(crs_level.innerHTML);
+
+            // if(crs_level != option){
+            //     parent.course[i].style.display = "none";
+            // }
+        }
+   
+
+
+}
+
+</script>
