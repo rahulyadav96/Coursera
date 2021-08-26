@@ -7,230 +7,7 @@
     <title>Machine Learning</title>
     <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{
-            font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        }
-        /*style on navbar*/
-        .f_clear{
-    clear: both;
-}
-.blueBgColor{
-    background-color: blue;
-    color: white;
-}
-.nav-bar{
-    height: 100px;
-    /* border:2px solid black */
-
-    margin: 5px;
-
-}
-
-
-
-.arrow{
-    height: 100px;
-}
-
-
-.nav{
-    /* height: 80px; */
-    width: 100px;
-    /* height: 50px; */
-}
-#logo{
-    /* height: 100px; */
-    width: 150px;
-}
-
-.left> div{
-    margin: 10px;
-    margin-top: 20px;
-    float: left;
-}
-#exp_nav{
-    margin-left: 30px;
-    /* margin-top: -20px !important; */
-    font-size: 20px;
-    background-color: blue;
-    /* height: 40px; */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius:5px;
-}
-
-
-.icon{
-    width: 10px;
-    filter: invert();
-}
-
-.search_icon{
-    /* height: 20px; */
-    width: 20px;
-    filter: invert();
-    /* background-color: black; */
-    /* margin-left: -30px; */
-
-    /* display: inline; */
-    /* margin-top: 10px; */
-    /* background-color: blue; */
-}
-
-#search>input{
-    border:1px solid black;
-    width: 300px;
-    height: 38px;
-    line-height: 40px;
-    /* margin: 10px; */
-
-    /* padding: 5px; */
-    border-radius: 5px 0px 0px 5px;
-    /* text-align:center; */
-}
-
-
-#icon_search{
-    padding: 10px;
-    background-color: blue;
-    margin-left: -11px;
-    height: 20px;
-    border: 1px solid black;
-    /* width: 300px; */
-    border-radius: 0px 5px 5px 0px;
-
-}
-
-.right{
-    /* margin-right: 50px; */
-    /* width: 800px; */
-
-    display: flex;
-    margin-left: 800px;
-    margin-top: -40px;
-}
-
-.right> li{
-
-  flex-direction: column-reverse;
-    /* margin-right: 100px; */
-    /* margin-top: -30px; */
-    list-style: none;
-    margin-left: 20px;
-    /* font-size: 20px; */
-    cursor: pointer;
-}
-.right>li> button{
-    height: 40px;
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    margin-top: -20px;
-    border: none;
-    border-radius: 5px;
-
-}
-#lg{
-    text-decoration: none;
-
-}
-
-
-        /* Style on header part*/
-        .header{
-            background: linear-gradient(90deg,rgb(214, 57, 57),rgb(223, 223, 130));
-            display: flex;
-            flex-direction: row;
-            color: white;
-            
-            margin: 0 -8px;
-        }
-        .go-to-origin{
-            margin: 2% 0;
-        }
-        .go-to-origin>ul >li>a{
-            color: white;
-        }
-        .go-to-origin>ul{
-            
-            list-style-type: none;
-            padding: 0;
-        }
-        .go-to-origin>ul  li{
-            display: inline;
-        }
-        .left-part, .rigth-part{
-            width: 40%;
-            padding:5%;
-        }
-        .rigth-part{
-            padding: 5% 20%;
-        }
-       
-        strong{
-            font-size: 30px;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul>li>span>a{
-            color: white;
-        }
-        /*instructor*/
-        .instructor-profile{
-            display: flex;
-            gap: 1%;
-            margin: 20px 0;
-        }
-        .inst-name{
-            position: relative;
-            top: 15px;
-            
-        }
-        .inst-name>div>a{
-            color: white;
-        }
-        .img-wraper>a>img{
-            border-radius: 50%;
-        }
-        .achivement{
-            border:1px solid white;
-            border-radius: 1px;
-            color: white;
-            background-color: blue;
-            font-weight: 10;
-            font-size: 14px;
-            
-        }
-        /*style on rating*/
-      
-        .checked{
-            color: yellow;
-        }
-        /*enrollment's style*/
-        .enrollment-wrap{
-            margin: 20px 0;
-            width: 50%;
-        }
-        .enroll{
-            width: 80%;
-            background-color: white;
-            color:black !important;
-            padding: 5% 10%;
-            text-align: center;
-            font-size: 15px;
-        }
-        .free-enroll{
-            font-size: 16px;
-            font-style: bold;
-        }
-        .enroll>p{
-            margin: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="enrollCourse.css">
 </head>
 <body>
     <!--Nav bar-->
@@ -278,6 +55,9 @@
     </div>
     <!--header -->
     <div class="header">
+        <div class="header-wrap">
+
+        
         <div class="left-part">
             <div class="go-to-origin">
                 <ul>
@@ -309,7 +89,7 @@
                 </div>
 
                 <div class="inst-name">
-                    <div><a href="#">Andrew Ng <b><span class="achivement"><b>TOP INSTRUCTOR</b> </span></b></a></div>
+                    <div><a href="#">Andrew Ng <b><span class="achivement" title="Andrew Ng is rated among the top instructor on Coursera "><b>TOP INSTRUCTOR</b> </span></b></a></div>
                 </div>
 
             </div>
@@ -330,11 +110,91 @@
 
         <div class="rigth-part">
             <p>Offered By</p>
-            <strong><span>Stanford</span></strong>
+            <strong><span title="Stanford University">Stanford</span></strong>
+        </div>
+    </div>
+    </div>
+    <!-- Course nav-bar-->
+    <div class="course-nav">
+        <div class="tabs-con">
+            <div><a href="#abt"><span class="tab">About</span></a></div>
+            <div><a href="#"><span class="tab">Instructor</span></a></div>
+            <div><a href="#"><span class="tab">Syllabus</span></a></div>
+            <div><a href="#"><span class="tab">Review</span></a></div>
+            <div><a href="#"><span class="tab">Enrollment Options</span></a></div>
+            <div><a href="#"><span class="tab">FAQ</span></a></div>
+        </div>
+        <hr>
+    </div>
+
+<!--Content for course nav-bar -->
+<div class="info">
+    <div class="course-info">
+
+        <div class="info-title">
+            <h1 id="abt">About the Course</h1>
+            <p>6,663,971 recent view</p>
+        </div>
+
+       <div class="info-cont">
+           <p>Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly 
+               improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. 
+               In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, 
+               but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to machine learning and AI.</p>
+       </div>
+
+        <div class="skills-tag">
+            <div class="tg">
+               <span class="tag-title">SKILLS YOU WILL GAIN</span> 
+            </div>
+            <div class="tags">
+                <div ><p>Logistics Regression</p></div>
+                <div><p>Artificial Neural Network</p></div>
+                <div><p>Machine Learning (ML) Algorithms</p></div>
+                <div><p>Machine Learning</p></div>
+            </div>
         </div>
 
     </div>
 
+    <div class="crs-prop">
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-calendar"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Flexible deadlines</div>
+                <div class="prop-des">Reset deadlines in accordance to your schedule.</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-certificate"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Shareable Certificate</div>
+                <div class="prop-des">Earn a Certificate upon completion</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-globe"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">100% online</div>
+                <div class="prop-des">Start instantly and learn at your own schedule.</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-clock-o"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Approx. 61 hours to complete</div>
+            </div>
+        </div>
+        <div>
+            <div >
+                <span class="prop-icon-con"> <i class="fa fa-commenting-o"></i></span></div>
+            <div class="prop-info-">
+                <div class="prop-name">English</div>
+                <div class="prop-des">Subtitles: Arabic, French, Portuguese (European), Chinese (Simplified), Italian, Vietnamese, German, Russian, English, Hebrew, Spanish, Hindi, Japanese</div>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 </html>
