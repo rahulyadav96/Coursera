@@ -234,9 +234,103 @@
 
         }
 
-        #inputBox{
+        #inputBox {
 
-            margin-left:160px;
+            margin-left: 160px;
+        }
+
+
+        /* Modal CSS */
+
+        .modal-contents img {
+
+            width: 50px;
+            height: 45px;
+
+
+        }
+
+        #bg-modal {
+
+            background-color: rgba(0, 0, 0, 0.8);
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            align-items: center;
+            justify-content: center;
+            display: none;
+
+            position: absolute;
+        }
+
+        .modal-contents {
+
+            margin-top: 40px;
+
+            background-color: white;
+            width: 400px;
+            height: 350px;
+            margin-left: 40px;
+            position: relative;
+            text-align: center;
+            border: 2px solid black;
+
+
+        }
+
+        #settingPassword1 {
+
+            width: 200px;
+            height: 20px;
+
+            margin-top: 40px;
+
+
+        }
+
+
+        #settingPassword2 {
+
+            width: 200px;
+            height: 20px;
+
+            margin-top: 40px;
+
+
+        }
+
+        #submitBtn {
+
+            /* font-size: 50px; */
+            width: 200px;
+            height: 40px;
+            margin-top: 40px;
+
+            background-color: seagreen;
+        }
+
+
+
+        #close {
+
+            width: 50px;
+            height: 40px;
+            transform: rotate(45deg);
+            margin-left: 350px;
+
+            /* position:absolute; */
+
+
+            font-size: 50px;
+            color: red;
+            cursor: pointer;
+        }
+
+        #continue {
+
+            font-size: 20px;
+            color: blue;
         }
     </style>
 </head>
@@ -293,7 +387,39 @@
             <button onclick="generate(event)" id="generateotp" style="visibility: hidden;">Generate new otp</button>
 
 
+
+
+            <!-- Modal working -->
+
+
+
+
         </form>
+
+
+
+        <div id="bg-modal">
+            <div class="modal-contents">
+
+                <div id="close">+</div>
+                <!-- <img src="https://choose.illinois.edu/images/header-logo.svg?rn=0728T163614" alt=""> -->
+
+                <form onsubmit="resetPassword(event)" id="settingPassword">
+
+                    <input id="settingPassword1" type="password" placeholder="Set password" required><br>
+                    <input id="settingPassword2" type="password" placeholder="Confirm password" required><br>
+
+                    <p id="passwordMatch"></p><br>
+
+                    <a href="login_university.html" style="visibility: hidden;" id="continue">continue to login
+                        page</a><br>
+
+
+                    <button id="submitBtn">Submit</a></button>
+                </form>
+
+            </div>
+        </div>
 
 
     </div>
@@ -323,6 +449,9 @@
 
 
 
+
+
+
 </body>
 
 </html>
@@ -333,13 +462,23 @@
 
     let pin = 1234
 
-    
+
     let count = 0;
+
+    var flag = 0;
 
     if (localStorage.getItem("persons" != null)) {
         let persons_data = JSON.parse(localStorage.getItem("persons"))
         localStorage.setItem("persons", JSON.stringify(persons_data))
     }
+    var persons_obj = {};
+
+
+    // password:document.getElementById("settingPassword1").value
+
+
+
+
 
 
 
@@ -356,7 +495,7 @@
 
         }
 
-        const persons_obj = {
+        persons_obj = {
 
             email1: document.getElementById("email").value,
 
@@ -364,19 +503,27 @@
             last_name: document.getElementById("l_Name").value,
 
 
-            birth_day: document.getElementById("date").value,
-
-
-
+            birth_day: document.getElementById("date").value
         }
 
-        if(persons_obj.email1 == "" || persons_obj.first_name == "" || persons_obj.last_name == "" || persons_obj.birth_day == ""){
+        // password:document.getElementById("settingPassword1").value
+
+
+
+
+
+
+
+
+
+
+        if (persons_obj.email1 == "" || persons_obj.first_name == "" || persons_obj.last_name == "" || persons_obj.birth_day == "") {
 
             alert("please fill all the required fields")
             return false;
         }
 
-        
+
 
 
 
@@ -437,28 +584,29 @@
 
         let inputval = document.getElementById("inputBox").value
 
-       
+
 
         if (inputval == pin) {
 
             document.getElementById("generateotp").style.visibility = "hidden"
 
+
+
             alert("sucessful")
 
-           
-           
+            pop_up()
 
 
         } else {
 
-            
+
 
             let generateotp1 = document.getElementById("generateotp")
 
             generateotp1.style.visibility = "visible"
 
-            document.getElementById("enter").innerText ="*WRONG OTP"
-           
+            document.getElementById("enter").innerText = "*WRONG OTP"
+
 
 
         }
@@ -472,7 +620,7 @@
 
         e.preventDefault()
 
-        document.getElementById("inputBox").value=""
+        document.getElementById("inputBox").value = ""
 
         document.getElementById("enter").innerText = ""
 
@@ -482,6 +630,143 @@
 
 
     }
+
+
+    // Modal JS
+
+
+
+    // document.getElementById("loginbtn").addEventListener("click", pop_up)
+
+    function pop_up() {
+
+
+
+        document.getElementById("bg-modal").style.display = "flex";
+
+
+
+
+
+    }
+
+
+
+
+    var bttn = document.getElementById("submitBtn")
+
+
+
+
+
+
+    let cross = document.getElementById("close")
+
+    cross.addEventListener("click", close_popup())
+
+
+    function close_popup() {
+
+        document.getElementById("bg-modal").style.display = "none";
+    }
+
+
+
+
+    function resetPassword(e) {
+
+        e.preventDefault()
+
+        let pass1 = document.getElementById("settingPassword1").value
+
+
+        let pass2 = document.getElementById("settingPassword2").value
+
+
+        if (pass1 == pass2) {
+            persons_obj["password"] = pass1;
+
+            let persons_data = JSON.parse(localStorage.getItem("persons"))
+
+            persons_data[persons_data.length - 1] = (persons_obj)
+
+            localStorage.setItem("persons", JSON.stringify(persons_data))
+
+
+
+
+            flag = 1
+
+
+
+
+
+
+        }
+        else {
+
+            flag = 2
+
+
+
+
+
+
+        } if (flag == 1) {
+
+            let passMatch = document.getElementById("passwordMatch")
+
+            passMatch.innerHTML = "password set sucessfully."
+
+            passMatch.style.color = "green"
+
+
+
+
+            document.getElementById("continue").style.visibility = "visible"
+
+
+        } else if (flag == 2) {
+
+            document.getElementById("passwordMatch").style.visibility = "visible"
+
+            document.getElementById("passwordMatch").innerHTML = "*password din't match.Try again"
+
+            document.getElementById("passwordMatch").style.pointerEvents = "none"
+
+            document.getElementById("passwordMatch").style.color = "red"
+
+            document.getElementById("passwordMatch").style.textDecoration = "none"
+
+
+
+
+            let pass1 = document.getElementById("settingPassword1").value = ""
+
+
+
+
+            let pass2 = document.getElementById("settingPassword2").value = ""
+
+
+
+
+        }
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

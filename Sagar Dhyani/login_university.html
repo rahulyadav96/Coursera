@@ -161,14 +161,14 @@
 
         }
 
-        .input {
+        #input {
 
 
             margin-left: 50px;
 
         }
 
-        .input2 {
+        #input2 {
 
 
             margin-left: 82px;
@@ -254,14 +254,14 @@
         <p class="para">To log in, please enter your email address and password.</p>
     </div>
 
-    <form>
+    <form onsubmit="loginForm(event)">
         <div id="content2">
             <div class="register">
                 <label class="labels">Email Address</label>
-                <input type="email" class="input" required><br><br>
+                <input type="email" id="input" required><br><br>
 
                 <label class="labels1">Password</label>
-                <input type="password" class="input2" required><br><br>
+                <input type="password" id="input2" required><br><br>
 
                 <button id="loginbtn">Login</button>
 
@@ -296,3 +296,80 @@
 </body>
 
 </html>
+
+<script>
+
+
+
+    let grab_details = JSON.parse(localStorage.getItem("persons"))
+
+    
+
+
+    function loginForm(e) {
+
+        var flag = 0;
+
+        e.preventDefault()
+
+        let emailAdd = document.getElementById("input").value
+
+        let pass = document.getElementById("input2").value
+
+        grab_details.forEach(element => {
+
+            // console.log("element:", element)
+
+            console.log("element:", element.email1)
+
+            console.log("emailadd:", emailAdd)
+
+            if (element.email1 == emailAdd && element.password == pass) {
+
+                flag =1;
+
+               
+
+
+
+               
+            } else {
+                
+                if(flag != 1){
+
+                    flag = 2;
+
+                }
+                
+            }
+
+
+
+
+
+
+        });
+
+        if(flag == 1){
+
+            alert("sucess")
+
+
+        }else if(flag ==2){
+            
+            alert("wrong credentials")
+        }
+
+       
+
+
+
+
+    }
+
+
+
+
+
+
+</script>
