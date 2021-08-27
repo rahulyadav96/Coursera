@@ -1,139 +1,14 @@
 body{
     font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
 }
-/*style on navbar*/
-.f_clear{
-clear: both;
-}
-.blueBgColor{
-background-color: blue;
-color: white;
-}
-.nav-bar{
-height: 100px;
-/* border:2px solid black */
 
-margin: 5px;
-
-
-}
-
-
-
-.arrow{
-height: 100px;
-}
-
-
-.nav{
-/* height: 80px; */
-width: 100px;
-/* height: 50px; */
-}
-#logo{
-/* height: 100px; */
-width: 150px;
-}
-
-.left> div{
-margin: 10px;
-margin-top: 20px;
-float: left;
-}
-#exp_nav{
-margin-left: 30px;
-/* margin-top: -20px !important; */
-font-size: 20px;
-background-color: blue;
-/* height: 40px; */
-color: white;
-text-align: center;
-padding: 10px;
-border-radius:5px;
-}
-
-
-.icon{
-width: 10px;
-filter: invert();
-}
-
-.search_icon{
-/* height: 20px; */
-width: 20px;
-filter: invert();
-/* background-color: black; */
-/* margin-left: -30px; */
-
-/* display: inline; */
-/* margin-top: 10px; */
-/* background-color: blue; */
-}
-
-#search>input{
-border:1px solid black;
-width: 300px;
-height: 38px;
-line-height: 40px;
-/* margin: 10px; */
-
-/* padding: 5px; */
-border-radius: 5px 0px 0px 5px;
-/* text-align:center; */
-}
-
-
-#icon_search{
-padding: 10px;
-background-color: blue;
-margin-left: -11px;
-height: 20px;
-border: 1px solid black;
-/* width: 300px; */
-border-radius: 0px 5px 5px 0px;
-
-}
-
-.right{
-/* margin-right: 50px; */
-/* width: 800px; */
-
-display: flex;
-margin-left: 800px;
-margin-top: -40px;
-}
-
-.right> li{
-
-flex-direction: column-reverse;
-/* margin-right: 100px; */
-/* margin-top: -30px; */
-list-style: none;
-margin-left: 20px;
-/* font-size: 20px; */
-cursor: pointer;
-}
-.right>li> button{
-height: 40px;
-padding: 10px;
-background-color: blue;
-color: white;
-margin-top: -20px;
-border: none;
-border-radius: 5px;
-
-}
-#lg{
-text-decoration: none;
-
-}
 
 
 /* Style on header part*/
 .header{
-    background: linear-gradient(90deg,rgb(214, 57, 57),rgb(223, 223, 130));
+    background: linear-gradient(90deg,rgba(214, 57, 57,1),rgba(223, 223, 130,1));
     color: white;
-    margin: 0 -8px;
+   margin: 0 -8px;
      
     }
 .header-wrap{
@@ -213,12 +88,15 @@ ul>li>span>a:hover{
     width: 50%;
 }
 .enroll{
-    width: 80%;
+    width: 100%;
     background-color: white;
     color:black !important;
     padding: 5% 10%;
     text-align: center;
     font-size: 15px;
+    cursor: pointer;
+    height: 100px;
+    line-height: 30px;
 }
 .free-enroll{
     font-size: 16px;
@@ -251,7 +129,7 @@ ul>li>span>a:hover{
 /* info part*/
 .info{
 width: 80%;
-margin: auto;
+margin: 0 auto 50px;
 display: flex;
 flex-direction: row;
 gap: 5%;
@@ -312,5 +190,5 @@ gap: 5%;
     margin: auto;
     padding: 0 10px;
     color: black;
-    border-radius: 25%;
+    border-radius: 50%;
 }
