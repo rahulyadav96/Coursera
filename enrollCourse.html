@@ -7,236 +7,15 @@
     <title>Machine Learning</title>
     <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <style>
-        body{
-            font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif;
-        }
-        /*style on navbar*/
-        .f_clear{
-    clear: both;
-}
-.blueBgColor{
-    background-color: blue;
-    color: white;
-}
-.nav-bar{
-    height: 100px;
-    /* border:2px solid black */
-
-    margin: 5px;
-
-}
-
-
-
-.arrow{
-    height: 100px;
-}
-
-
-.nav{
-    /* height: 80px; */
-    width: 100px;
-    /* height: 50px; */
-}
-#logo{
-    /* height: 100px; */
-    width: 150px;
-}
-
-.left> div{
-    margin: 10px;
-    margin-top: 20px;
-    float: left;
-}
-#exp_nav{
-    margin-left: 30px;
-    /* margin-top: -20px !important; */
-    font-size: 20px;
-    background-color: blue;
-    /* height: 40px; */
-    color: white;
-    text-align: center;
-    padding: 10px;
-    border-radius:5px;
-}
-
-
-.icon{
-    width: 10px;
-    filter: invert();
-}
-
-.search_icon{
-    /* height: 20px; */
-    width: 20px;
-    filter: invert();
-    /* background-color: black; */
-    /* margin-left: -30px; */
-
-    /* display: inline; */
-    /* margin-top: 10px; */
-    /* background-color: blue; */
-}
-
-#search>input{
-    border:1px solid black;
-    width: 300px;
-    height: 38px;
-    line-height: 40px;
-    /* margin: 10px; */
-
-    /* padding: 5px; */
-    border-radius: 5px 0px 0px 5px;
-    /* text-align:center; */
-}
-
-
-#icon_search{
-    padding: 10px;
-    background-color: blue;
-    margin-left: -11px;
-    height: 20px;
-    border: 1px solid black;
-    /* width: 300px; */
-    border-radius: 0px 5px 5px 0px;
-
-}
-
-.right{
-    /* margin-right: 50px; */
-    /* width: 800px; */
-
-    display: flex;
-    margin-left: 800px;
-    margin-top: -40px;
-}
-
-.right> li{
-
-  flex-direction: column-reverse;
-    /* margin-right: 100px; */
-    /* margin-top: -30px; */
-    list-style: none;
-    margin-left: 20px;
-    /* font-size: 20px; */
-    cursor: pointer;
-}
-.right>li> button{
-    height: 40px;
-    padding: 10px;
-    background-color: blue;
-    color: white;
-    margin-top: -20px;
-    border: none;
-    border-radius: 5px;
-
-}
-#lg{
-    text-decoration: none;
-
-}
-
-
-        /* Style on header part*/
-        .header{
-            background: linear-gradient(90deg,rgb(214, 57, 57),rgb(223, 223, 130));
-            display: flex;
-            flex-direction: row;
-            color: white;
-            
-            margin: 0 -8px;
-        }
-        .go-to-origin{
-            margin: 2% 0;
-        }
-        .go-to-origin>ul >li>a{
-            color: white;
-        }
-        .go-to-origin>ul{
-            
-            list-style-type: none;
-            padding: 0;
-        }
-        .go-to-origin>ul  li{
-            display: inline;
-        }
-        .left-part, .rigth-part{
-            width: 40%;
-            padding:5%;
-        }
-        .rigth-part{
-            padding: 5% 20%;
-        }
-       
-        strong{
-            font-size: 30px;
-        }
-        a{
-            text-decoration: none;
-        }
-        ul>li>span>a{
-            color: white;
-        }
-        /*instructor*/
-        .instructor-profile{
-            display: flex;
-            gap: 1%;
-            margin: 20px 0;
-        }
-        .inst-name{
-            position: relative;
-            top: 15px;
-            
-        }
-        .inst-name>div>a{
-            color: white;
-        }
-        .img-wraper>a>img{
-            border-radius: 50%;
-        }
-        .achivement{
-            border:1px solid white;
-            border-radius: 1px;
-            color: white;
-            background-color: blue;
-            font-weight: 10;
-            font-size: 14px;
-            
-        }
-        /*style on rating*/
-      
-        .checked{
-            color: yellow;
-        }
-        /*enrollment's style*/
-        .enrollment-wrap{
-            margin: 20px 0;
-            width: 50%;
-        }
-        .enroll{
-            width: 80%;
-            background-color: white;
-            color:black !important;
-            padding: 5% 10%;
-            text-align: center;
-            font-size: 15px;
-        }
-        .free-enroll{
-            font-size: 16px;
-            font-style: bold;
-        }
-        .enroll>p{
-            margin: 10px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="enrollCourse.css">
+    <link rel="stylesheet" href="mypagesfooter.css">
+    <link rel="stylesheet" href="navBarStyle.css">
 </head>
 <body>
     <!--Nav bar-->
+    <header>
     <div class="nav-bar">
         <div class="left">
-
             <div>
                 <img class="nav" id="logo" src="data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4KPCEtLSBHZW5lcmF0b3I6IEFkb2JlIElsbHVzdHJhdG9yIDE2LjIuMCwgU1ZHIEV4cG9ydCBQbHVnLUluIC4gU1ZHIFZlcnNpb246IDYuMDAgQnVpbGQgMCkgIC0tPgo8IURPQ1RZUEUgc3ZnIFBVQkxJQyAiLS8vVzNDLy9EVEQgU1ZHIDEuMS8vRU4iICJodHRwOi8vd3d3LnczLm9yZy9HcmFwaGljcy9TVkcvMS4xL0RURC9zdmcxMS5kdGQiPgo8c3ZnIHZpZXdCb3g9IjAgMCAxMTU1IDE2NCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiBmaWxsLXJ1bGU9ImV2ZW5vZGQiIGNsaXAtcnVsZT0iZXZlbm9kZCIgc3Ryb2tlLWxpbmVqb2luPSJyb3VuZCIgc3Ryb2tlLW1pdGVybGltaXQ9IjIiPjxwYXRoIGQ9Ik0xNTkuNzUgODEuNTRjMC00NC40OSAzNi42My04MC40NyA4Mi40My04MC40NyA0Ni4xMiAwIDgyLjc2IDM2IDgyLjc2IDgwLjQ3IDAgNDQuMTYtMzYuNjQgODAuOC04Mi43NiA4MC44LTQ1LjggMC04Mi40My0zNi42OC04Mi40My04MC44em0xMjUuNjEgMGMwLTIyLjI0LTE5LjMtNDEuODctNDMuMTgtNDEuODctMjMuNTUgMC00Mi44NSAxOS42My00Mi44NSA0MS44NyAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yIDIzLjkyIDAgNDMuMTgtMTkuNjMgNDMuMTgtNDIuMnptNzA1LjYzIDEuMzFjMC00OC43NCAzOS41OC04MS43OCA3NS41Ny04MS43OCAyNC41MyAwIDM4LjYgNy41MiA0OC4wOCAyMS45MmwzLjc3LTE5aDM2Ljc5djE1NS40aC0zNi43OWwtNC43NS0xNmMtMTAuNzkgMTEuNzgtMjQuMjEgMTktNDcuMSAxOS0zNS4zMy0uMDUtNzUuNTctMzEuMTMtNzUuNTctNzkuNTR6bTEyNS42MS0uMzNjLS4wOS0yMy41MjctMTkuNDctNDIuODM1LTQzLTQyLjgzNS0yMy41OSAwLTQzIDE5LjQxMS00MyA0M3YuMTY1YzAgMjEuNTkgMTkuMyA0MC44OSA0Mi44NiA0MC44OSAyMy44NSAwIDQzLjE0LTE5LjMgNDMuMTQtNDEuMjJ6TTk0NS43OCAyMlY0aC00MC4yM3YxNTUuMzloNDAuMjNWNzUuNjZjMC0yNS4xOSAxMi40NC0zOC4yNyAzNC0zOC4yNyAxLjQzIDAgMi43OS4xIDQuMTIuMjNMOTkxLjM2LjExYy0yMC45Ny4xMS0zNi4xNyA3LjMtNDUuNTggMjEuODl6bS00MDQuMjcuMDF2LTE4bC00MC4yMy4wOS4zNCAxNTUuMzcgNDAuMjMtLjA5LS4yMi04My43MmMtLjA2LTI1LjE4IDEyLjM1LTM4LjI5IDMzLjkzLTM4LjM0IDEuMzc2LjAwNCAyLjc1Mi4wODEgNC4xMi4yM0w1ODcuMSAwYy0yMSAuMTctMzYuMjIgNy4zOS00NS41OSAyMi4wMXpNMzM4Ljg4IDk5LjJWNC4wMWg0MC4yMlY5NC4zYzAgMTkuOTUgMTEuMTIgMzEuNzMgMzAuNDIgMzEuNzMgMjEuNTkgMCAzNC0xMy4wOSAzNC0zOC4yOFY0LjAxaDQwLjI0djE1NS4zOGgtNDAuMjF2LTE4Yy05LjQ4IDE0LjcyLTI0Ljg2IDIxLjkyLTQ2LjEyIDIxLjkyLTM1Ljk4LjAxLTU4LjU1LTI2LjE2LTU4LjU1LTY0LjExem0zOTEuNzQtMTcuNDhjLjA5LTQzLjUxIDMxLjIzLTgwLjc0IDgwLjYyLTgwLjY1IDQ1LjguMDkgNzguMTEgMzYuNzggNzggODAgLjAxIDQuMjczLS4zMyA4LjU0LTEgMTIuNzZsLTExOC40MS0uMjJjNC41NCAxOC42NSAxOS44OSAzMi4wOSA0My4xMiAzMi4xNCAxNC4wNiAwIDI5LjEyLTUuMTggMzguMy0xNi45NGwyNy40NCAyMmMtMTQuMTEgMTkuOTMtMzkgMzEuNjYtNjUuNDggMzEuNjEtNDYuNzUtLjE2LTgyLjY3LTM1LjIzLTgyLjU5LTgwLjd6bTExOC4xMi0xNi4xNGMtMi4yNi0xNS43LTE4LjU5LTI3Ljg0LTM3Ljg5LTI3Ljg3LTE4LjY1IDAtMzMuNzEgMTEuMDYtMzkuNjMgMjcuNzNsNzcuNTIuMTR6bS0yNjEuNCA1OS45NGwzNS43Ni0xOC43MmM1LjkxIDEyLjgxIDE3LjczIDIwLjM2IDM0LjQ4IDIwLjM2IDE1LjQzIDAgMjEuMzQtNC45MiAyMS4zNC0xMS44MiAwLTI1LTg0LjcxLTkuODUtODQuNzEtNjcgMC0zMS41MiAyNy41OC00OC4yNiA2MS43Mi00OC4yNiAyNS45NCAwIDQ4LjkyIDExLjQ5IDYxLjQgMzIuODNsLTM1LjQ0IDE4Ljc1Yy01LjI1LTEwLjUxLTE1LjEtMTYuNDItMjcuNTgtMTYuNDItMTIuMTQgMC0xOC4wNiA0LjI3LTE4LjA2IDExLjQ5IDAgMjQuMyA4NC43MSA4Ljg3IDg0LjcxIDY3IDAgMzAuMjEtMjQuNjIgNDguNTktNjQuMzUgNDguNTktMzMuODItLjAzLTU3LjQ2LTExLjE5LTY5LjI3LTM2Ljh6TTAgODEuNTRDMCAzNi43MyAzNi42My43NCA4Mi40My43NGMyNy45NDctLjE5NiA1NC4xODIgMTMuNzM3IDY5LjY3IDM3bC0zNC4zNCAxOS45MmE0Mi45NzIgNDIuOTcyIDAgMDAtMzUuMzMtMTguMzJjLTIzLjU1IDAtNDIuODUgMTkuNjMtNDIuODUgNDIuMiAwIDIyLjU3IDE5LjMgNDIuMiA0Mi44NSA0Mi4yYTQyLjUwMiA0Mi41MDIgMCAwMDM2LjMxLTIwbDM0IDIwLjI4Yy0xNS4zMDcgMjMuOTU1LTQxLjkwMiAzOC40MzEtNzAuMzMgMzguMjhDMzYuNjMgMTYyLjM0IDAgMTI1LjY2IDAgODEuNTR6IiBmaWxsPSIjMDA1NkQyIiBmaWxsLXJ1bGU9Im5vbnplcm8iLz48L3N2Zz4=" alt="logo">
 
@@ -250,7 +29,7 @@
 
             <div id="search">
                 <!-- <span>What do you want to learn ?</span> -->
-                <input type="text" id="search_input" placeholder="What do you want to learn ?">
+                <input type="text" id="search_input" placeholder="Machine Learning">
                 <!-- <div> -->
                     <!-- <img src="img/search.png"  class="search_icon" alt=""> -->
                 <!-- </div> -->
@@ -266,18 +45,22 @@
         <div class="f_clear"></div>
         <div class="right">
 
-            <li>For Enterprise</li>
-            <li>For Student</li>
+            <li class="for"> <a href="#">For Enterprise</a></li>
+            <li class="for"><a href="#">For Student</a></li>
             <li><a href="login.html" id="lg"> Login</a></li>
             <li><button> Join for Free</button></li>
            
         </div>
         <div class="f_clear"></div>
-        <hr class="hed">
+        
         
     </div>
+</header>
     <!--header -->
     <div class="header">
+        <div class="header-wrap">
+
+        
         <div class="left-part">
             <div class="go-to-origin">
                 <ul>
@@ -298,7 +81,7 @@
                 <span class="fa fa-star checked"></span>
                 <span class="fa fa-star checked"></span>
                 
-                <span class="no-of-review"> <b>4.9(162,658)</b> rating</span>
+                <span class="no-of-review"> <b>4.9(162,658)</b> ratings</span>
                  
             </div>
 
@@ -309,18 +92,18 @@
                 </div>
 
                 <div class="inst-name">
-                    <div><a href="#">Andrew Ng <b><span class="achivement"><b>TOP INSTRUCTOR</b> </span></b></a></div>
+                    <div><a href="#">Andrew Ng <b><span class="achivement" title="Andrew Ng is rated among the top instructor on Coursera "><b>TOP INSTRUCTOR</b> </span></b></a></div>
                 </div>
 
             </div>
 
             <div class="enrollment-wrap">
-                <a href="#">
-                    <div class="enroll">
+                
+                    <button class="enroll" onclick="getEnroll()">
                         <span class="free-enroll">Enroll for Free</span>
-                        <p><span>starts Aug 30</span></p>
-                    </div>
-                </a>
+                        starts Aug 30
+                    </button>
+                
             </div>
 
             <div>
@@ -330,11 +113,186 @@
 
         <div class="rigth-part">
             <p>Offered By</p>
-            <strong><span>Stanford</span></strong>
+            <strong><span title="Stanford University">Stanford</span></strong>
+        </div>
+    </div>
+    </div>
+    <!-- Course nav-bar-->
+    <div class="course-nav">
+        <div class="tabs-con">
+            <div><a href="#abt"><span class="tab">About</span></a></div>
+            <div><a href="#"><span class="tab">Instructor</span></a></div>
+            <div><a href="#"><span class="tab">Syllabus</span></a></div>
+            <div><a href="#"><span class="tab">Review</span></a></div>
+            <div><a href="#"><span class="tab">Enrollment Options</span></a></div>
+            <div><a href="#"><span class="tab">FAQ</span></a></div>
+        </div>
+        <hr>
+    </div>
+
+<!--Content for course nav-bar -->
+<div class="info">
+    <div class="course-info">
+
+        <div class="info-title">
+            <h1 id="abt">About the Course</h1>
+            <p>6,663,971 recent view</p>
+        </div>
+
+       <div class="info-cont">
+           <p>Machine learning is the science of getting computers to act without being explicitly programmed. In the past decade, machine learning has given us self-driving cars, practical speech recognition, effective web search, and a vastly 
+               improved understanding of the human genome. Machine learning is so pervasive today that you probably use it dozens of times a day without knowing it. Many researchers also think it is the best way to make progress towards human-level AI. 
+               In this class, you will learn about the most effective machine learning techniques, and gain practice implementing them and getting them to work for yourself. More importantly, you'll learn about not only the theoretical underpinnings of learning, 
+               but also gain the practical know-how needed to quickly and powerfully apply these techniques to new problems. Finally, you'll learn about some of Silicon Valley's best practices in innovation as it pertains to machine learning and AI.</p>
+       </div>
+
+        <div class="skills-tag">
+            <div class="tg">
+               <span class="tag-title">SKILLS YOU WILL GAIN</span> 
+            </div>
+            <div class="tags">
+                <div ><p>Logistics Regression</p></div>
+                <div><p>Artificial Neural Network</p></div>
+                <div><p>Machine Learning (ML) Algorithms</p></div>
+                <div><p>Machine Learning</p></div>
+            </div>
         </div>
 
     </div>
 
+    <div class="crs-prop">
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-calendar"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Flexible deadlines</div>
+                <div class="prop-des">Reset deadlines in accordance to your schedule.</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-certificate"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Shareable Certificate</div>
+                <div class="prop-des">Earn a Certificate upon completion</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-globe"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">100% online</div>
+                <div class="prop-des">Start instantly and learn at your own schedule.</div>
+            </div>
+        </div>
+        <div>
+            <div class="prop-icon-con"><i class="fa fa-clock-o"></i></div>
+            <div class="prop-info-">
+                <div class="prop-name">Approx. 61 hours to complete</div>
+            </div>
+        </div>
+        <div>
+            <div >
+                <span class="prop-icon-con"> <i class="fa fa-commenting-o"></i></span></div>
+            <div class="prop-info-">
+                <div class="prop-name">English</div>
+                <div class="prop-des">Subtitles: Arabic, French, Portuguese (European), Chinese (Simplified), Italian, Vietnamese, German, Russian, English, Hebrew, Spanish, Hindi, Japanese</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!--footer -->
+    <footer>
+        <div class="footer-cont">
+            <div class="ft-uper-box">
+                <div class="ft-left">
+                    <div class="bar">
+                        <div class="bar-t">Couresa</div>
+                        <div><a href="#">About</a></div>
+                        <div><a href="#">What we offer</a></div>
+                        <div><a href="#">Leadership</a></div>
+                        <div><a href="#">Career</a></div>
+                        <div><a href="#">Catalog</a></div>
+                        <div><a href="#">Coursera plus</a></div>
+                        <div><a href="#">Prefessional Certificate</a></div>
+                        <div><a href="#">Degree</a></div>
+                        <div><a href="#">For Students</a></div>
+                        <div><a href="#">For Enterprises</a></div>
+                        <div><a href="#">For Government</a></div>
+                        <div><a href="#">For Campus</a></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-t">Community</div>
+                        <div><a href="#">Learners</a></div>
+                        <div><a href="#">Partners</a></div>
+                        <div><a href="#">Developers</a></div>
+                        <div><a href="#">Beta Testers</a></div>
+                        <div><a href="#">Translators</a></div>
+                        <div><a href="#">Blog</a></div>
+                        <div><a href="#">Tech Blog</a></div>
+                        <div><a href="#">Teaching Center</a></div>
+                    </div>
+                    <div class="bar">
+                        <div class="bar-t">More</div>
+                        <div><a href="#">Press</a></div>
+                        <div><a href="#">Investors</a></div>
+                        <div><a href="#">Terms</a></div>
+                        <div><a href="#">Privacy</a></div>
+                        <div><a href="#">Help</a></div>
+                        <div><a href="#">Accessibility</a></div>
+                        <div><a href="#">Contact</a></div>
+                        <div><a href="#">Articals</a></div>
+                        <div><a href="#">Directory</a></div>
+                        <div><a href="#">Affiliates</a></div>
+                    </div>
+                
+                
+                </div>
+               
+                <div class="ft-right">
+                    <div class="apple-store ">
+                        <a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/download_on_the_app_store_badge_en.svg" class="dwl"></a>
+                    </div>
+                    <div class="play-store ">
+                        <a href=""><img src="https://d3njjcbhbojbot.cloudfront.net/web/images/icons/en_generic_rgb_wo_45.png" class="dwl"></a>
+                    </div>
+                    <div class="cert">
+                        <a href="#"><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://d3njjcbhbojbot.cloudfront.net/web/images/icons/2018-B-Corp-Logo-Black-S.png?auto=format%2Ccompress&dpr=1&w=151&h=120&q=40" > </a></div>
+                </div>
+            </div>
+            <hr>
+
+            <div class="lower-box">
+                <div class="bf-l">
+                    <span>&copy; 2021 Coursera Inc. All rights reserved.</span>
+                </div>
+                <div class="bf-r">
+                    <div>
+                        <span><a><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/facebook.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"></a></span>
+                        <span> <a><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/linkedin.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"></a></span>
+                        <span><a><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/twitter.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"></a></span>
+                        <span><a><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/youtube.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"></a></span>
+                        <span><a><img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://s3.amazonaws.com/coursera_assets/footer/instagram.png?auto=format%2Ccompress&dpr=1&w=28&h=28&q=40"></a></span>
+                       
+                    </div>
+                </div>
+                <div class="clear-f"></div>
+            </div>
+
+        </div>
+    </footer>
+    
 
 </body>
 </html>
+<script>
+
+    function getEnroll(){
+
+
+        setTimeout(function(){
+            alert("Congratulations! You are Successfully Enrolled");
+        },2000);
+
+        
+    }
+</script>
