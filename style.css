@@ -29,8 +29,9 @@ body{
     /* height: 100px; */
     /* border:2px solid green; */
     background-color: white;
+    height: 80px;
 
-    margin: 0px 5px 0px 5px;
+    /* margin: 0px 5px 0px 5px; */
     /* margin-top: 0px; */
     top: 0;
     /* position: sticky; */
@@ -38,6 +39,8 @@ body{
 
     /* overflow: hidden; */
     z-index: 1;
+
+    width: 100%;
 
 }
 
@@ -95,6 +98,7 @@ body{
     /* height: 20px; */
     width: 20px;
     filter: invert();
+    cursor: pointer;
     /* background-color: black; */
     /* margin-left: -30px; */
 
@@ -154,6 +158,7 @@ body{
     margin-top: -20px;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
 
 }
 #lg{
@@ -318,7 +323,10 @@ body{
     
 }  */
 
-#universitie_degree
+#universitie_degree{
+    position: relative;
+}
+.mySlide
 {
     
     margin-left: 100px;
@@ -328,13 +336,18 @@ body{
     
     
 }
-#universitie_degree :hover{
+ /* #universitie_degree :hover{ */
+ .mySlide :hover{
     box-shadow: 0 5px 6px rgb(31 31 31 / 30%), 0 1px 4px rgb(31 31 31 / 30%);
 
+} 
+
+.mySlide{
+    display: none;
 }
  
 
-#universitie_degree>div{
+.mySlide>div{
     background-color: white;
     /* box-shadow: white; */
 
@@ -347,13 +360,13 @@ body{
   
 
 }
-#universitie_degree>div :hover{
+.mySlide>div :hover{
     box-shadow: none;
 }
 
 
 
-#universitie_degree> div > img{
+.mySlide> div > img{
     height: 100px;
     /* overflow: hidden; */
     margin-left: 0px;
@@ -362,14 +375,14 @@ body{
     box-shadow: white;
 
 }
-#universitie_degree> div >:nth-child(2){
+.mySlide> div >:nth-child(2){
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
    
     
 }
-#universitie_degree > div >:nth-child(3)
+.mySlide > div >:nth-child(3)
 {
     font-size: 15px;
     text-align: center;
@@ -388,10 +401,107 @@ body{
 
 }
 
+.prev_slide{
+    position: relative;
+    top: 150px;
+    font-size: 50px;
+    color: red;
+    /* left: 40px; */
+    margin-left: 60px;
+    margin-top: -30px;
+
+} 
+
+.next_slide{
+    position: absolute;
+    
+    
+    margin-top: -30px;
+    
+    
+    
+    left: 1200px;
+
+
+}
+
+.prev_slide, .next_slide {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  /* padding: 16px; */
+  /* margin-top: -22px; */
+  /* color: white; */
+  color: black;
+
+  /* font-weight: bold; */
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+
+
+
+.prev_slide:hover, .next_slide:hover {
+  /* background-color: rgba(0,0,0,0.8); */
+  color: #5C6BC0;
+}
+
+
+
+.dot1 {
+  cursor: pointer;
+  position: relative;
+  height: 15px;
+  width: 15px;
+  margin: 0 5px;
+  margin-left: 10px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  
+  
+}
+
+.third_dot{
+    position: relative;
+    top: 10px;
+    /* background-color: red; */
+}
+
+.active1, .dot1:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
+
+
 .right_arrow{
     width: 30px;
     margin-left: 190px;
-    margin-top: -28px;
+    margin-top: -40px;
     cursor: pointer;
 }
 
@@ -550,7 +660,8 @@ box-shadow: none;
 
 
 /*****************************       Free Course  *********************** */
-.free_course{
+/* .free_course{ */
+.mySlide2{
     display: flex;
     margin: 10px 90px;
     position: relative;
@@ -559,13 +670,16 @@ box-shadow: none;
 
 
 }
-.free_course :hover{
+/* .free_course :hover{ */
+.mySlide2 :hover{
+
     box-shadow: 0 5px 6px rgb(31 31 31 / 30%), 0 1px 4px rgb(31 31 31 / 30%);
 
 
 }
 
-.free_course > div{
+/* .free_course > div{ */
+.mySlide2 > div{
     height: 400px;   
     /* border: 2px solid black; */
     margin: 10px;
@@ -575,16 +689,20 @@ box-shadow: none;
     box-shadow: 0 1px 6px rgb(31 31 31 / 12%), 0 1px 4px rgb(31 31 31 / 12%);
 }
 
-.free_course > div :hover{
+/* .free_course > div :hover{ */
+.mySlide2 > div :hover{
 box-shadow: none;
 }
 
 
-.free_course > div>img{
+/* .free_course > div>img{ */
+.mySlide2 > div>img{
+
 height: 120px;
 width: 250px;
 }
-.free_course > div > :nth-child(2)
+/* .free_course > div > :nth-child(2) */
+.mySlide2 > div > :nth-child(2)
 {
     height: 60px;
     width: 80px;
@@ -595,7 +713,9 @@ width: 250px;
     
 
 }
-.free_course > div > :nth-child(3)
+/* .free_course > div > :nth-child(3) */
+.mySlide2 > div > :nth-child(3)
+
 {
     /* position: absolute; */
     /* margin-left: 20px; */
@@ -612,7 +732,8 @@ width: 250px;
 
 }
 
-.free_course > div > :nth-child(4)
+/* .free_course > div > :nth-child(4) */
+.mySlide2 > div > :nth-child(4)
 {
     font-size: 22px;
     color: rgb(77, 75, 75);
@@ -621,14 +742,16 @@ width: 250px;
     margin-bottom: 5px;
 }
 
-.free_course > div > :nth-child(5)
+/* .free_course > div > :nth-child(5) */
+.mySlide2 > div > :nth-child(5)
 {
     color: grey;
     margin-left: 20px;
     margin-top: 0px;
 
 }
-.free_course > div > :nth-child(6){
+/* .free_course > div > :nth-child(6){ */
+.mySlide2 > div > :nth-child(6){
     color: rgb(77, 75, 75);
     font-weight: 600;
     position: absolute;
@@ -638,6 +761,76 @@ width: 250px;
     /* margin-bo: 50px; */
     /* left: 30px; */
 }
+
+/* The dots/bullets/indicators */
+
+.prev2, .next2 {
+  cursor: pointer;
+  position: absolute;
+  /* top: 50%; */
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: black;
+  font-weight: 100;
+  font-size: 40px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+.prev2{
+    margin-top: 120px;
+    margin-left: 30px;
+    /* margin-top: -400px; */
+
+}
+
+.next2{
+    margin-left: 1150px;
+    margin-top: -300px;
+}
+
+
+ .prev2:hover, .next2:hover {
+  /* background-color: rgba(0,0,0,0.8); */
+  color: #5C6BC0;
+} 
+.dot2 {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active2, .dot2:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+
+
 /*   *****************                 Coursera_for_Business       *********************/
 
 #coursera_for_business{
