@@ -242,7 +242,7 @@
 
         /* Modal CSS */
 
-        .modal-contents img {
+        .box-contents img {
 
             width: 50px;
             height: 45px;
@@ -264,13 +264,13 @@
             position: absolute;
         }
 
-        .modal-contents {
+        .box-contents {
 
             margin-top: 40px;
 
             background-color: white;
             width: 400px;
-            height: 350px;
+            height: 400px;
             margin-left: 40px;
             position: relative;
             text-align: center;
@@ -399,10 +399,10 @@
 
 
         <div id="bg-modal">
-            <div class="modal-contents">
+            <div class="box-contents">
 
                 <div id="close">+</div>
-                <!-- <img src="https://choose.illinois.edu/images/header-logo.svg?rn=0728T163614" alt=""> -->
+                <img src="https://choose.illinois.edu/images/header-logo.svg?rn=0728T163614" alt="">
 
                 <form onsubmit="resetPassword(event)" id="settingPassword">
 
@@ -546,7 +546,7 @@
 
         pin = Math.round(Math.random() * (9999 - 1000 + 1) + 1000)
 
-        console.log(pin)
+        console.log("To get started, please Activate your Account and use the following temporary PIN: ",pin)
 
         let enter = document.createElement("p")
 
@@ -662,7 +662,7 @@
 
     let cross = document.getElementById("close")
 
-    cross.addEventListener("click", close_popup())
+    cross.addEventListener("click", close_popup)
 
 
     function close_popup() {
