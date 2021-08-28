@@ -95,8 +95,12 @@ ul>li>span>a:hover{
     text-align: center;
     font-size: 15px;
     cursor: pointer;
-    height: 100px;
+    height: 80px;
     line-height: 30px;
+    border: 0px;
+}
+.enroll:hover{
+    background-color: rgba(219, 215, 215,0.5);
 }
 .free-enroll{
     font-size: 16px;
