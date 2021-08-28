@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="icon" href="img/coursera tab logo.png" type="image/x-icon">
+    <!-- <link rel="icon" href="img/coursera tab logo.png" type="image/x-icon"> -->
+    <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
     <link rel="stylesheet" href="style.css">
     <title>Coursera</title>
 </head>
@@ -122,12 +123,16 @@
 
     <div id="universitie_degree">
         <a class="prev_slide" onclick="plusSlides1(-1)">&#10094;</a>
-        <div class="mySlide degree_first_div">
-            <a href="degree_page.html">
-           <div id="degree_first_div">
-            <img id="degree_first_ele_img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/growth_certificate_degree/degree_background_image/Illinois_cropped.png?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" alt="campus img">
-            <p id="degree_first_ele_first_p">Master of Business Administration (iMBA)</p>
-            <p id="degree_first_ele_second_p">from the University of illinois at Urbana-Champaign</p>
+        <div class="mySlide" id="imba">
+            <!-- <a href="degree_page.html"> -->
+           <!-- <div id="degree_first_div"> -->
+           <div>
+            <!-- <img id="degree_first_ele_img" src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/growth_certificate_degree/degree_background_image/Illinois_cropped.png?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" alt="campus img"> -->
+            <img src="https://d3njjcbhbojbot.cloudfront.net/api/utilities/v1/imageproxy/https://coursera_assets.s3.amazonaws.com/growth_certificate_degree/degree_background_image/Illinois_cropped.png?auto=format%2Ccompress&dpr=1&w=300&h=&fit=crop" alt="campus img">
+            <!-- <p id="degree_first_ele_first_p>Master of Business Administration (iMBA)</p> -->
+            <p>Master of Business Administration (iMBA)</p>
+            <!-- <p id="degree_first_ele_second_p">from the University of illinois at Urbana-Champaign</p> -->
+            <p>from the University of illinois at Urbana-Champaign</p>
             
             </div>
         </a>
@@ -794,6 +799,15 @@
         window.location.href = 'Sagar Dhyani/coursera_signup.html'
 
      })
+
+
+    //  iMBA page 
+    var imba = document.getElementById('imba');
+
+    imba.addEventListener('click',function(){
+        console.log('srk');
+        window.location.href = 'Sagar Dhyani/degree_page.html';
+    })
 
     //  Slide 2
     var slideIndex2 = 1;

@@ -176,7 +176,7 @@ hr{
 /* Mid Page */
 #mid{
     /* margin-left: 100px; */
-    width : 1200px;
+    width : 1230px;
     height: 200px;
     margin-top: 100px;
     /* margin-top: -20px; */
@@ -334,12 +334,12 @@ hr{
     position: relative;
 }
 
- #universitie_degree > .mySlide  :nth-child(1){
+ /* #universitie_degree > .mySlide  :nth-child(1){ */
 /* color: red; */
 /* color: black; */
 /* font-size: 20px; */
 
-text-decoration: none;
+/* text-decoration: none; */
 /* box-shadow: none; */
 /* width: 260px; */
 /* margin-top: 10px; */
@@ -347,55 +347,45 @@ text-decoration: none;
 
 
 /* font-size: 40px; */
- }  
+ /* }   */
 
     /* .degree_first_div :hover{
          box-shadow: 0 5px 6px rgb(31 31 31 / 30%), 0 1px 4px rgb(31 31 31 / 30%);
     } */
  
-#degree_first_div{
+/*#degree_first_div{
     background-color: white;
-    /* box-shadow: white; */
-
-    /* overflow: hidden; */
-    /* margin: 10px; */
+    
     width: 250px;
     height: 230px;
     margin-top: 10px;
     
     flex-wrap: wrap;
     color: black;
-    /* margin-right: 20px; */
-
-
-    
-
-
 
 
 }
-#degree_first_div :hover{
+*/
+/* #degree_first_div :hover{
 
     box-shadow: none;
-    /* box-shadow: 0 5px 6px rgb(31 31 31 / 30%), 0 1px 4px rgb(31 31 31 / 30%); */
 
 
 
- } 
+ }  */
 
-#degree_first_ele_img{
+/* #degree_first_ele_img{
 
      height: 100px;
-    /* overflow: hidden; */
     margin-left: 0px;
     width: 250px;
     margin-top: 0px;
     box-shadow: white;
 
-}
+} */
 
 
-#degree_first_ele_first_p{
+/* #degree_first_ele_first_p{
     margin-top: 10px;
     font-size: 20px;
     text-align: center;
@@ -409,7 +399,7 @@ text-decoration: none;
     
 
 
-}
+} */
 
 
 .mySlide
