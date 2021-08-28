@@ -3,7 +3,8 @@
 
 <head>
 
-    <title>Document</title>
+    <title>Coursera | Online Courses & Credentials From Top Educators.</title>
+    <link rel="icon" href="https://d3njjcbhbojbot.cloudfront.net/web/images/favicons/favicon-v2-96x96.png" sizes="96x96">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,7 +13,7 @@
     <style>
         body {
 
-            background-color: rgb(43, 43, 43);
+            background-color: rgb(93, 113, 138);
 
 
         }
@@ -80,6 +81,7 @@
             background-color: rgb(24, 89, 169);
             font-family: 'Open Sans', sans-serif;
             margin-left: 50px;
+            margin-top:10px;
             font-size: 14px;
             border:none;
         }
@@ -102,6 +104,27 @@
             margin-left: 50px;
             margin-top: 0;
             color: rgb(80, 78, 78)
+        }
+
+        #loginSuccess{
+
+        
+            margin-left:150px;
+            font-size: 14px;
+            font-weight: 700;
+            font-family: 'Open Sans', sans-serif;
+
+        }
+
+        #continue{
+
+            margin-left:150px;
+            font-size: 16px;
+            
+            text-decoration: none;
+            font-family: 'Open Sans', sans-serif;
+
+
         }
     </style>
 </head>
@@ -130,6 +153,13 @@
             <label class="label">PASSWORD</label><br>
 
             <input class="input" type="password" id="password" placeholder="enter password" required><br>
+
+            <p id = "loginSuccess"></p>
+            <a href="C:\Users\USER\Desktop\Coursera-master\Coursera-master\Coursera\index.html" style="visibility: hidden;" id="continue">continue to home
+                page</a><br>
+            
+
+            
 
 
             <button id="loginbtn">Login</button>
@@ -208,7 +238,12 @@
 
         if (flag == 1) {
 
-            alert("sucess")
+            document.getElementById("loginSuccess").innerHTML ="*Login successful!"
+            document.getElementById("loginSuccess").style.color="green"
+
+            document.getElementById("continue").style.visibility="visible";
+
+            
 
             clearFields()
 
