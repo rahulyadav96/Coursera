@@ -16,6 +16,7 @@ body{
     margin: auto;
     display: flex;
     flex-direction: row;
+
 }
 .go-to-origin{
     margin: 2% 0;
@@ -75,6 +76,7 @@ ul>li>span>a:hover{
     background-color: blue;
     font-weight: 10;
     font-size: 14px;
+    padding: 2px;
     
 }
 /*style on rating*/
@@ -160,6 +162,7 @@ gap: 5%;
 .prop-icon-con>i{
     margin: 5px;
     font-size: 30px;
+    color: coral;
     
 }
 .prop-name{
