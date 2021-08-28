@@ -14,11 +14,15 @@ body{
 .head-cont>div{
     margin: 0;
 }
-li{
+.dir{
+    list-style-type: none;
+}
+.dir li {
     display: inline;
-    text-decoration: none;
+   
     margin-right: 5px;
 }
+
 #filter-con {
     background-color: #f8f8f8 ;
     font-size: 16px;
