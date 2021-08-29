@@ -7,9 +7,7 @@
     clear: left;
 }
 body{
-    margin: 0px;
-    padding: 0px;
-    background-color: #FAFAFA;
+    /* background-color: #FAFAFA; */
     font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif !important;
 
 }
@@ -20,9 +18,9 @@ body{
 
 
 .container{
-    /* width : 100%; */
+    width : 100%;
     /* margin: auto; */
-    margin: 10px;
+    /* margin: 10px; */
 }
 .nav-bar{
     /* height: 100px; */
@@ -40,7 +38,7 @@ body{
     z-index: 1;
 
     width: 100%;
-    margin-left: -10px !important;
+    /* margin-left: -10px !important; */
 
 }
 
@@ -53,7 +51,7 @@ body{
 
 .nav{
     /* height: 80px; */
-    width: 100px;
+    width: 100%;
     /* height: 50px; */
 
 }
@@ -140,8 +138,14 @@ body{
     margin-left: 20px;
     /* font-size: 20px; */
     cursor: pointer;
+    
 }
-.right>li> button{
+.right > li > a {
+    font-style: normal;
+    text-decoration: none;
+    color: #000;
+}
+.right>li>a> button{
     height: 40px;
     padding: 10px;
     background-color: blue;
@@ -151,6 +155,9 @@ body{
     border-radius: 5px;
     cursor: pointer;
 
+}
+.home43 {
+    color: #0056d2;
 }
 #lg{
     text-decoration: none;
