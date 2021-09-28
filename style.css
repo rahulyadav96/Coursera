@@ -22,7 +22,7 @@ body{
    
     background-color: white;
     width: 100%;
-    height: 80px;
+    height: 76px;
     position: fixed;
     top: 0;
     z-index: 1;
@@ -50,25 +50,107 @@ body{
     margin-top: 1.7%;
     float: left;
 }
-#exp_nav{
-    /* margin-left: 30px; */
+/*#exp_nav{
+   
     margin-left: 2.1%;
-    /* margin-top: -20px !important; */
+    
     font-size: 20px;
     background-color: blue;
-    /* height: 40px; */
     color: white;
     text-align: center;
     padding: 10px;
-    /* padding: 0.8%; */
     border-radius:5px;
     cursor: pointer;
+}*/
+
+#exp_nav{
+    /* position: relative; */
+    position: absolute;
+
+    display: inline-block;
 }
 
+.dropbtn{
+     /* background-color: #04AA6D; */
+    background-color: blue;
+
+  color: white;
+  padding: 10px;
+  font-size: 16px;
+  border: none;
+  font-weight: 400;
+    border-radius:5px;
+
+
+  cursor: pointer;
+
+
+}
+
+/* .dropdown-content{ */
+
+.dropdown-content{
+    display: none;
+  /* overflow: scroll; */
+
+    /* position: absolute; */
+    position: relative;
+    background-color: #f1f1f1; ;
+    /* min-width: 160px; */
+    /* min-width: 300px; */
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    /* z-index: 1; */
+    /* scroll-behavior: smooth; */
+
+    /* overflow: visible; */
+    
+}
+
+
+
+.dropdown-content a{
+    /* margin-top: %; */
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    overflow: visible;
+    
+}
+
+.dropdown-content p{
+    font-weight: bolder;
+    margin-left: 6%;
+    margin-top: 5%;
+}
+
+.dropdown-content a:hover{
+    background-color: #ddd;
+}
+
+#exp_nav:hover .dropdown-content {
+    display: block;
+    margin-top: 5%;
+    margin-left: -35%;
+}
+
+#exp_nav:hover .dropbtn{
+    background-color: white;
+    color: blue;
+    border: 1px solid black;
+  /* overflow: scroll; */
+
+}
 
 .icon{
     width: 10px;
     filter: invert();
+}
+
+#search{
+    /* position: relative;   */
+    margin-left: 10%;
+    /* position: absolute; */
 }
 
 .search_icon{
