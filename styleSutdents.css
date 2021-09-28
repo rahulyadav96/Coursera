@@ -1,15 +1,16 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: #FAFAFA;
+    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif !important;
+}
+
 .clr_blue{
     color: blue;
-
 }
 
 .l_clear{
     clear: left;
-}
-body{
-    /* background-color: #FAFAFA; */
-    font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,sans-serif !important;
-
 }
 
 .f_clear{
@@ -17,64 +18,51 @@ body{
 }
 
 
-.container{
-    width : 100%;
-    /* margin: auto; */
-    /* margin: 10px; */
-}
 .nav-bar{
-    /* height: 100px; */
-    /* border:2px solid green; */
+   
     background-color: white;
+    width: 100%;
     height: 80px;
-
-    /* margin: 0px 5px 0px 5px; */
-    /* margin-top: 0px; */
-    top: 0;
-    /* position: sticky; */
     position: fixed;
-
-    /* overflow: hidden; */
+    top: 0;
     z-index: 1;
-
-    width: 100%;
-    /* margin-left: -10px !important; */
-
 }
 
-
-
-
-
-
-
-
-.nav{
-    /* height: 80px; */
-    width: 100%;
-    /* height: 50px; */
-
+.arrow{
+    height: 100px;
 }
+
+.nav{ 
+    /* width: 100px; */
+    width: 7%;
+}
+
 #logo{
     /* height: 100px; */
     width: 150px;
+    /* width: 50%; */
 }
 
 .left> div{
-    margin: 10px;
-    margin-top: 20px;
+    /* margin: 10px;      */
+    margin: 0.8%;
+    /* margin-top: 20px; */
+    margin-top: 1.7%;
     float: left;
 }
 #exp_nav{
-    margin-left: 30px;
+    /* margin-left: 30px; */
+    margin-left: 2.1%;
     /* margin-top: -20px !important; */
     font-size: 20px;
-    background-color: #0056d2;
+    background-color: blue;
     /* height: 40px; */
     color: white;
     text-align: center;
     padding: 10px;
+    /* padding: 0.8%; */
     border-radius:5px;
+    cursor: pointer;
 }
 
 
@@ -98,9 +86,11 @@ body{
 
 #search>input{
     border:1px solid black;
-    width: 300px;
+    /* width: 300px; */
+    width: 120%;
     height: 38px;
     line-height: 40px;
+    outline: none;
     /* margin: 10px; */
 
     /* padding: 5px; */
@@ -112,7 +102,7 @@ body{
 #icon_search{
     padding: 10px;
     background-color: blue;
-    margin-left: -11px;
+    /* margin-left: -11px; */
     height: 20px;
     border: 1px solid black;
     /* width: 300px; */
@@ -125,8 +115,10 @@ body{
     /* width: 800px; */
 
     display: flex;
-    margin-left: 800px;
-    margin-top: -40px;
+    /* margin-left: 800px; */
+    margin-left: 62%;
+    /* margin-top: -40px; */
+    margin-top: -3.5%;
 }
 
 .right> li{
@@ -138,26 +130,21 @@ body{
     margin-left: 20px;
     /* font-size: 20px; */
     cursor: pointer;
-    
 }
-.right > li > a {
-    font-style: normal;
-    text-decoration: none;
-    color: #000;
-}
-.right>li>a> button{
-    height: 40px;
+.right>li> button{
+    /* height: 40px; */
+
     padding: 10px;
+    /* padding: .0.7%; */
     background-color: blue;
     color: white;
-    margin-top: -20px;
+    /* margin-top: -20px; */
+    margin-top: -5%;
+
     border: none;
     border-radius: 5px;
     cursor: pointer;
 
-}
-.home43 {
-    color: #0056d2;
 }
 #lg{
     text-decoration: none;
@@ -168,7 +155,6 @@ hr{
     margin-top: 2px;
 }
 
-
 #coursera_for_business > h1, h2, h3, h4, h5, h6,p {
     margin: 0px;
     padding: 0px;
@@ -178,95 +164,108 @@ hr{
 
 /***************************   Footer   ************************** */
 
+
 #footer{
-     /* /* font-family: "Source Sans Pro", Arial, sans-serif; */
-    /* text-align: center; */
-    line-height: 1.25rem;
-    /* line-height: 20px; */
-    font-size: .875rem;
-    font-family: Source Sans Pro,Arial,sans-serif;
-    width: 100%;
-    background-color: rgb(245, 245, 245);
-    padding-top: 64px;
-    padding-bottom: 64px;
-    padding-left: 64px;
-    padding-right: 64px;
-    margin: 0px auto;
-    max-width: 100%; 
+    /* /* font-family: "Source Sans Pro", Arial, sans-serif; */
+   /* text-align: center; */
+   line-height: 1.25rem;
+   /* line-height: 20px; */
+   font-size: .875rem;
+   font-family: Source Sans Pro,Arial,sans-serif;
+   width: 90%;
+   background-color: rgb(245, 245, 245);
+   padding-top: 64px;
+   padding-bottom: 64px;
+   padding-left: 5%;
+   padding-right: 5%;
+   margin: 0px auto;
+   max-width: 100%; 
 /* font-family: Helvetica Neue,Helvetica,Arial,sans-serif; */
-        /* font-size: 14px;
-    line-height: 1.428571429;
-    color: #333;
-    background-color: #fff; */
+       /* font-size: 14px;
+   line-height: 1.428571429;
+   color: #333;
+   background-color: #fff; */
 
 
 }
 
 .footer_top{
-    display: grid;
-    grid-template-columns: 23% 23% 23% 23%;
+   display: grid;
+   grid-template-columns: 23% 23% 23% 23%;
 
-    /* grid-gap: 2%; */
+   /* grid-gap: 2%; */
 
 }
 
 .footer_bottom_left{
 
-    width: 700px;
-    color: #1f1f1f;
+   width: 700px;
+   color: #1f1f1f;
 
-    display: grid;
-    grid-template-columns:35% 35% 35% ;
-    /* grid-gap: 5%; */
-    margin-top: 100px;
-    float: left;
-    /* border:2px solid black */
+   display: grid;
+   grid-template-columns:35% 35% 35% ;
+   /* grid-gap: 5%; */
+   margin-top: 100px;
+   float: left;
+   /* border:2px solid black */
 
 }
 
 .footer_bottom_right{
-    margin-top: -250px;
-    margin-right: 300px;
+   margin-top: -250px;
+   margin-right: 300px;
 
-    /* margin-top: 100px; */
-    float: right;
-    /* border:2px solid black */
+   /* margin-top: 100px; */
+   float: right;
+   /* border:2px solid black */
+
+}
+
+.footer_bottom_right > img{
+   cursor: pointer;
 
 }
 /* .footer_bottom_right{
 /* margin-top: 20px; */
 
 #google_store{
-    margin-top: 20px;
-    margin-bottom: 20px;
-    height: 40px;
-    width: 135px;
+   margin-top: 20px;
+   margin-bottom: 20px;
+   height: 40px;
+   width: 135px;
+   cursor: pointer;
 }
 
 .footer-main{
-    width: 1200px;
+   /* width: 1200px; */
+   width: 95%;
 }
 
 .footer_main_left{
-    float: left;
-    margin-top: 50px;
-    /* color: red; */
+   float: left;
+   /* margin-top: 50px; */
+   margin-top: 3.5%;
+   /* color: red; */
 }
 .footer_main_right{
 
-    float: right;
-    margin-right: 200px;
-    margin-top: -40px;
-    
+   float: right;
+   /* margin-right: 200px; */
+   margin-right: 15%;
+   /* margin-top: -40px; */
+   margin-top: -2.5%;
+   
+   
 }
 .footer_main_right >img{
-    
-    height: 50px;
-    width: 50px;
-    filter: grayscale();
-    border-radius: 25px;
+   
+   height: 50px;
+   width: 50px;
+   filter: grayscale();
+   border-radius: 25px;
 
 }
+
 /* css for firstdiv */
 #firstdiv {
     height: 100vh;
